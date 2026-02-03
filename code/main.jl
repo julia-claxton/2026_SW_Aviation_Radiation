@@ -19,7 +19,7 @@ include("./Julia_ELFIN_Tools/Visualization.jl")
 const TOP_LEVEL = dirname(@__DIR__)
 
 function save_example_energy_histograms()
-    E = 1114242.9 # Beam energy, keV
+    E = 1_114_242.9 # Beam energy, keV
     data = get_spectra(results_dir, "proton", E)
     delete!(data, "input_particle")
     npzwrite("$(TOP_LEVEL)/data/figure_data/example_histograms.npz", data)
@@ -398,7 +398,7 @@ function save_conjunction_data(; results_dir = "$(TOP_LEVEL)/data/GLYPHS", show_
     end
     npzwrite("$(TOP_LEVEL)/data/figure_data/conjunction_data.npz",
         residual_bin_edges = residual_bin_edges,
-        waspp_residuals = glyphs_residuals,
+        sepiida_residuals = glyphs_residuals,
         nairas_residuals = nairas_residuals,
 
         altitude_bin_edges = altitude_bin_edges,
@@ -674,36 +674,65 @@ function move_ams_energies_from_results()
         _, idx = findmin( abs.(ams_energies_keV[i] .- existing_energies) )
         closest_energies[i] = existing_energies[idx]
     end
-    deleteat!(closest_energies, [length(closest_energies)-2, length(closest_energies)])
 
     vline(log10.(ams_energies_keV))
     scatter!(log10.(closest_energies), ones(length(closest_energies)))
-    #display(plot!())
+    display(plot!())
 
     destination_dir = results_dir
-
-
     for i in eachindex(closest_energies)
         E = @sprintf "%.1f" closest_energies[i]
 
         paths = glob("proton_input_$(E)keV_100000particles_*_spectra.csv", source_dir)
-        [cp(paths[j], "$(destination_dir)/$(basename(paths[j]))", force = true) for j in eachindex(paths)]
+        for j in eachindex(paths)
+            cp(paths[j], "$(destination_dir)/$(basename(paths[j]))", force = true)
+            println("Copied $(basename(paths[j]))")
+        end
     end
 end
 
 results_dir = "$(TOP_LEVEL)/data/GLYPHS"
 
-#save_example_energy_histograms()
-#save_elfin_example_event()
-#save_stopping_power()
-#save_gcr_spectrum()
-#save_elfin_derived_doserates()
-#save_example_armas_data()
+save_example_energy_histograms()
+save_elfin_example_event()
+save_stopping_power()
+save_gcr_spectrum()
+save_elfin_derived_doserates()
+save_example_armas_data()
 
-#save_conjunction_data()
+save_conjunction_data()
 
 #find_elfin_spectra()
 #view_elfin_spectra("$(TOP_LEVEL)/results/percentile_98_elfin_spectra.csv")
 
 #rep_explained_fraction_of_excess()
 #fraction_contributed_by_out_of_range_gammas()
+
+#=
+p, e = get_beams(results_dir)
+sortvec = sortperm(p)
+p = p[sortvec]
+e = e[sortvec]
+
+for i in eachindex(p)
+    data = get_spectra(results_dir, p[i], e[i])
+
+    heatmap(log10.(data["proton_counts"]),
+        title = "$(p[i]) $(e[i])",
+        bg = :black,
+        clims = (-2, 6)
+    )
+    display(plot!())
+end
+=#
+#=
+source_dir = "/Users/luna/Research/geant4/Aviation_GLYPHS/_isotropic_beams"
+
+data = get_ams02_spectrum()
+ams_energies_keV = 1e6 .* data["alpha_energy_bins_mean_GeV"]
+_, existing_energies = get_beams(results_dir, input_particle = "alpha")
+
+vline(log10.(ams_energies_keV))
+scatter!(log10.(existing_energies), ones(length(existing_energies)))
+display(plot!())
+=#

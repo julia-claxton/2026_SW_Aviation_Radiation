@@ -193,7 +193,7 @@ def _case_study(ax, data, i):
 
     # Plot data
     ax.plot(glyphs_dose, glyphs_altitude,
-        label = "WASPP (this work)",
+        label = "SEPIIDA (this work)",
         color = "#ff71a3",
     )
     ax.scatter(armas, altitude,
@@ -254,7 +254,7 @@ def armas_residuals():
     )
     fig.patch.set_facecolor("none") # Outside bg color
 
-    _residual_histogram(ax[0], "WASPP")
+    _residual_histogram(ax[0], "SEPIIDA")
     _residual_histogram(ax[1], "NAIRAS")
 
     # Save
@@ -286,7 +286,7 @@ def _residual_histogram(ax, compare_against):
     ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(yticks))
 
 
-    if compare_against == "WASPP": ax.set_ylabel("Datapoints")
+    if compare_against == "SEPIIDA": ax.set_ylabel("Datapoints")
     if compare_against == "NAIRAS":
         for label in ax.yaxis.get_ticklabels():
             label.set_visible(False)
@@ -570,11 +570,11 @@ def excess_doserate_comparison():
     # Save figure
     my_savefig(fig, "excess_dose_comparison")
 
-stopping_power()
-example_model_histograms()
-gcr_dose()
-case_studies()
+#stopping_power()
+#example_model_histograms()
+#gcr_dose()
+#case_studies()
 armas_residuals()
-elfin_example_data()
-electron_dose()
-excess_doserate_comparison()
+#elfin_example_data()
+#electron_dose()
+#excess_doserate_comparison()
