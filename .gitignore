@@ -1,0 +1,27 @@
+# Notebook stuff
+*.gif
+notebook*
+
+# Raw data files
+*.cdf
+*.npz
+*ARMAS_dirIP*.txt
+data/ARMAS/*
+data/GLYPHS/*
+
+# OS crap
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.icloud
+
+# LaTeX auxililiary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.gz
+*.log

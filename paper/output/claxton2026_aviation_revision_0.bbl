@@ -1,0 +1,976 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Agostinelli%
+\ \protect \BOthers {.}}{%
+Agostinelli%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+geant4}
+\APACinsertmetastar {%
+geant4}%
+\begin{APACrefauthors}%
+Agostinelli, S.%
+, Allison, J.%
+, Amako, K\BPBI a.%
+, Apostolakis, J.%
+, Araujo, H.%
+, Arce, P.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {GEANT4—a simulation toolkit} {Geant4—a simulation toolkit}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nuclear instruments and methods in physics research section A: Accelerators, Spectrometers, Detectors and Associated Equipment}{506}{3}{250--303}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Angelopoulos%
+\ \protect \BOthers {.}}{%
+Angelopoulos%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+angelopoulos2020}
+\APACinsertmetastar {%
+angelopoulos2020}%
+\begin{APACrefauthors}%
+Angelopoulos, V.%
+, Tsai, E.%
+, Bingley, L.%
+, Shaffer, C.%
+, Turner, D\BPBI L.%
+, Runov, A.%
+\BDBL {}Zhang, G\BPBI Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{7}{30}.
+\newblock
+{\BBOQ}\APACrefatitle {{The ELFIN Mission}} {{The ELFIN Mission}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Science Reviews}{216}{5}{103}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1007/s11214-020-00721-7} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s11214-020-00721-7} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Aryan%
+, Bortnik%
+, Tobiska%
+, Mehta%
+, Hogan%
+\BCBL {}\ \BBA {} Challa%
+}{%
+Aryan%
+, Bortnik%
+, Tobiska%
+, Mehta%
+, Hogan%
+\BCBL {}\ \BBA {} Challa%
+}{%
+{\protect \APACyear {2025}}%
+}]{%
+aryan2025b}
+\APACinsertmetastar {%
+aryan2025b}%
+\begin{APACrefauthors}%
+Aryan, H.%
+, Bortnik, J.%
+, Tobiska, W\BPBI K.%
+, Mehta, P.%
+, Hogan, B.%
+\BCBL {}\ \BBA {} Challa, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Enhanced Radiation at Aviation Altitudes and Plasmaspheric Hiss Waves—A Time Shift Analysis} {Enhanced radiation at aviation altitudes and plasmaspheric hiss waves—a time shift analysis}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research: Space Physics}{130}{10}{e2025JA033959}.
+\newblock
+\begin{APACrefURL} \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2025JA033959} \end{APACrefURL}
+\newblock
+\APACrefnote{e2025JA033959 2025JA033959}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2025JA033959} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Aryan%
+, Bortnik%
+, Tobiska%
+, Mehta%
+\BCBL {}\ \BBA {} Siddalingappa%
+}{%
+Aryan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+aryan2023}
+\APACinsertmetastar {%
+aryan2023}%
+\begin{APACrefauthors}%
+Aryan, H.%
+, Bortnik, J.%
+, Tobiska, W\BPBI K.%
+, Mehta, P.%
+\BCBL {}\ \BBA {} Siddalingappa, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Enhanced Radiation Levels at Aviation Altitudes and Their Relationship to Plasma Waves in the Inner Magnetosphere} {Enhanced radiation levels at aviation altitudes and their relationship to plasma waves in the inner magnetosphere}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{21}{10}{e2023SW003477}.
+\newblock
+\begin{APACrefURL} \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2023SW003477} \end{APACrefURL}
+\newblock
+\APACrefnote{e2023SW003477 2023SW003477}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2023SW003477} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Aryan%
+, Bortnik%
+, Tobiska%
+, Mehta%
+, Siddalingappa%
+\BCBL {}\ \BBA {} Hogan%
+}{%
+Aryan%
+, Bortnik%
+, Tobiska%
+, Mehta%
+, Siddalingappa%
+\BCBL {}\ \BBA {} Hogan%
+}{%
+{\protect \APACyear {2025}}%
+}]{%
+aryan2025a}
+\APACinsertmetastar {%
+aryan2025a}%
+\begin{APACrefauthors}%
+Aryan, H.%
+, Bortnik, J.%
+, Tobiska, W\BPBI K.%
+, Mehta, P.%
+, Siddalingappa, R.%
+\BCBL {}\ \BBA {} Hogan, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Cross Correlation Between Plasmaspheric Hiss Waves and Enhanced Radiation Levels at Aviation Altitudes} {Cross correlation between plasmaspheric hiss waves and enhanced radiation levels at aviation altitudes}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{23}{2}{e2024SW004184}.
+\newblock
+\begin{APACrefURL} \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2024SW004184} \end{APACrefURL}
+\newblock
+\APACrefnote{e2024SW004184 2024SW004184}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2024SW004184} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Berger%
+, Coursey%
+\BCBL {}\ \BBA {} Chang%
+}{%
+Berger%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+nist-stoppingpower}
+\APACinsertmetastar {%
+nist-stoppingpower}%
+\begin{APACrefauthors}%
+Berger, M.%
+, Coursey, J.%
+\BCBL {}\ \BBA {} Chang, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+\APACrefbtitle {Stopping-Power \& Range Tables for Electrons, Protons, and Helium Ions.} {Stopping-power \& range tables for electrons, protons, and helium ions.}
+\newblock
+\APAChowpublished {Online}.
+\newblock
+\APACaddressPublisher{}{National Institute of Standards and Technology Physical Measurement Laboratory}.
+\newblock
+\begin{APACrefURL} [{2025-10}]\url{https://www.nist.gov/pml/stopping-power-range-tables-electrons-protons-and-helium-ions} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://dx.doi.org/10.18434/T4NC7P} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Berland%
+, Marshall%
+, Capannolo%
+, McCarthy%
+\BCBL {}\ \BBA {} Zheng%
+}{%
+Berland%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+berland2023}
+\APACinsertmetastar {%
+berland2023}%
+\begin{APACrefauthors}%
+Berland, G\BPBI D.%
+, Marshall, R\BPBI A.%
+, Capannolo, L.%
+, McCarthy, M\BPBI P.%
+\BCBL {}\ \BBA {} Zheng, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Kinetic Modeling of Radiation Belt Electrons With Geant4 to Study Energetic Particle Precipitation in Earth's Atmosphere} {Kinetic modeling of radiation belt electrons with geant4 to study energetic particle precipitation in earth's atmosphere}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Earth and Space Science}{10}{11}{e2023EA002987}.
+\newblock
+\begin{APACrefURL} \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2023EA002987} \end{APACrefURL}
+\newblock
+\APACrefnote{e2023EA002987 2023EA002987}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2023EA002987} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bezanson%
+, Edelman%
+, Karpinski%
+\BCBL {}\ \BBA {} Shah%
+}{%
+Bezanson%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+julia-language}
+\APACinsertmetastar {%
+julia-language}%
+\begin{APACrefauthors}%
+Bezanson, J.%
+, Edelman, A.%
+, Karpinski, S.%
+\BCBL {}\ \BBA {} Shah, V\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Julia: A fresh approach to numerical computing} {Julia: A fresh approach to numerical computing}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{SIAM {R}eview}{59}{1}{65--98}.
+\newblock
+\begin{APACrefURL} \url{https://epubs.siam.org/doi/10.1137/141000671} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1137/141000671} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Cadoux%
+\ \protect \BOthers {.}}{%
+Cadoux%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2002}}%
+}]{%
+ams02}
+\APACinsertmetastar {%
+ams02}%
+\begin{APACrefauthors}%
+Cadoux, F.%
+, Cervelli, F.%
+, Chambert-Hermel, V.%
+, Chen, G.%
+, Chen, H.%
+, Coignet, G.%
+\BDBL {}Zhuang, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The AMS-02 electromagnetic calorimeter} {The ams-02 electromagnetic calorimeter}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nuclear Physics B - Proceedings Supplements}{113}{1}{159-165}.
+\newblock
+\begin{APACrefURL} \url{https://www.sciencedirect.com/science/article/pii/S0920563202018364} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/S0920-5632(02)01836-4} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chen%
+\ \protect \BOthers {.}}{%
+Chen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+chen2025}
+\APACinsertmetastar {%
+chen2025}%
+\begin{APACrefauthors}%
+Chen, L.%
+, Huo, R.%
+, Li, Q.%
+, Wang, T.%
+, Xu, W.%
+\BCBL {}\ \BBA {} Ye, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {GeoMagFilter: Modeling the angular-rigidity joint distribution of galactic cosmic rays on low Earth orbit} {Geomagfilter: Modeling the angular-rigidity joint distribution of galactic cosmic rays on low earth orbit}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Advances in Space Research}{75}{7}{5450-5459}.
+\newblock
+\begin{APACrefURL} \url{https://www.sciencedirect.com/science/article/pii/S0273117725000961} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.asr.2025.01.066} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Claxton%
+\ \BBA {} Marshall%
+}{%
+Claxton%
+\ \BBA {} Marshall%
+}{%
+{\protect \APACyear {2026}}%
+}]{%
+claxton2026accepted}
+\APACinsertmetastar {%
+claxton2026accepted}%
+\begin{APACrefauthors}%
+Claxton, J\BPBI L.%
+\BCBT {}\ \BBA {} Marshall, R\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2026}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Electron Backscatter in Energetic Particle Precipitation: Data Analysis and Simulation} {Electron backscatter in energetic particle precipitation: Data analysis and simulation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research: Space Physics}{}{}{In publication}.
+\newblock
+\begin{APACrefDOI} \doi{10.1029/2025JA034640} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dong%
+, Xiang%
+\BCBL {}\ \BBA {} Ni%
+}{%
+Dong%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+dong2024}
+\APACinsertmetastar {%
+dong2024}%
+\begin{APACrefauthors}%
+Dong, J.%
+, Xiang, Z.%
+\BCBL {}\ \BBA {} Ni, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {On the Relationship Between the Banded Hiss Distribution and Plasmapause Location: A Survey of Van Allen Probes Observations} {On the relationship between the banded hiss distribution and plasmapause location: A survey of van allen probes observations}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Geophysical Research Letters}{51}{22}{e2024GL111893}.
+\newblock
+\begin{APACrefURL} \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2024GL111893} \end{APACrefURL}
+\newblock
+\APACrefnote{e2024GL111893 2024GL111893}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2024GL111893} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Geant4 Collaboration}%
+}{%
+{Geant4 Collaboration}%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+qbbc-docs}
+\APACinsertmetastar {%
+qbbc-docs}%
+\begin{APACrefauthors}%
+{Geant4 Collaboration}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+\APACrefbtitle {QBBC.} {Qbbc.}
+\newblock
+\begin{APACrefURL} [{2026-01}]\url{https://geant4.web.cern.ch/documentation/pipelines/master/plg_html/PhysicsListGuide/reference_PL/QBBC.html} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Harris%
+\ \protect \BOthers {.}}{%
+Harris%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+numpy}
+\APACinsertmetastar {%
+numpy}%
+\begin{APACrefauthors}%
+Harris, C\BPBI R.%
+, Millman, K\BPBI J.%
+, van~der Walt, S\BPBI J.%
+, Gommers, R.%
+, Virtanen, P.%
+, Cournapeau, D.%
+\BDBL {}Oliphant, T\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{9}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Array programming with {NumPy}} {Array programming with {NumPy}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature}{585}{7825}{357--362}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1038/s41586-020-2649-2} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/s41586-020-2649-2} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hartley%
+, Kletzing%
+, Santolík%
+, Chen%
+\BCBL {}\ \BBA {} Horne%
+}{%
+Hartley%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+hartley2018}
+\APACinsertmetastar {%
+hartley2018}%
+\begin{APACrefauthors}%
+Hartley, D\BPBI P.%
+, Kletzing, C\BPBI A.%
+, Santolík, O.%
+, Chen, L.%
+\BCBL {}\ \BBA {} Horne, R\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Statistical Properties of Plasmaspheric Hiss From Van Allen Probes Observations} {Statistical properties of plasmaspheric hiss from van allen probes observations}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research: Space Physics}{123}{4}{2605-2619}.
+\newblock
+\begin{APACrefURL} \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2017JA024593} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1002/2017JA024593} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hubbell%
+\ \BBA {} Seltzer%
+}{%
+Hubbell%
+\ \BBA {} Seltzer%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+nist-xrayattenuation}
+\APACinsertmetastar {%
+nist-xrayattenuation}%
+\begin{APACrefauthors}%
+Hubbell, J.%
+\BCBT {}\ \BBA {} Seltzer, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+\APACrefbtitle {Tables of X-Ray Mass Attenuation Coefficients and Mass Energy-Absorption Coefficients (version 1.4).} {Tables of x-ray mass attenuation coefficients and mass energy-absorption coefficients (version 1.4).}
+\newblock
+\APAChowpublished {Online}.
+\newblock
+\APACaddressPublisher{Gaithersburg, MD}{National Institute of Standards and Technology}.
+\newblock
+\begin{APACrefURL} [{2025-10}]\url{http://physics.nist.gov/xaamdi} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://dx.doi.org/10.18434/T4D01F} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hunter%
+}{%
+Hunter%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+matplotlib}
+\APACinsertmetastar {%
+matplotlib}%
+\begin{APACrefauthors}%
+Hunter, J\BPBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Matplotlib: A 2D graphics environment} {Matplotlib: A 2d graphics environment}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computing in Science \& Engineering}{9}{3}{90--95}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/MCSE.2007.55} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lehtinen%
+, Bell%
+\BCBL {}\ \BBA {} Inan%
+}{%
+Lehtinen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1999}}%
+}]{%
+lehtinen1999}
+\APACinsertmetastar {%
+lehtinen1999}%
+\begin{APACrefauthors}%
+Lehtinen, N\BPBI G.%
+, Bell, T\BPBI F.%
+\BCBL {}\ \BBA {} Inan, U\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Monte Carlo simulation of runaway MeV electron breakdown with application to red sprites and terrestrial gamma ray flashes} {Monte carlo simulation of runaway mev electron breakdown with application to red sprites and terrestrial gamma ray flashes}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research: Space Physics}{104}{A11}{24699--24712}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Li%
+\ \protect \BOthers {.}}{%
+Li%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+li2015}
+\APACinsertmetastar {%
+li2015}%
+\begin{APACrefauthors}%
+Li, W.%
+, Ma, Q.%
+, Thorne, R\BPBI M.%
+, Bortnik, J.%
+, Kletzing, C\BPBI A.%
+, Kurth, W\BPBI S.%
+\BDBL {}Nishimura, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Statistical properties of plasmaspheric hiss derived from Van Allen Probes data and their effects on radiation belt electron dynamics} {Statistical properties of plasmaspheric hiss derived from van allen probes data and their effects on radiation belt electron dynamics}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research: Space Physics}{120}{5}{3393-3405}.
+\newblock
+\begin{APACrefURL} \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2015JA021048} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1002/2015JA021048} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lowe%
+\ \protect \BOthers {.}}{%
+Lowe%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+lowe2022}
+\APACinsertmetastar {%
+lowe2022}%
+\begin{APACrefauthors}%
+Lowe, D.%
+, Roy, L.%
+, Tabocchini, M\BPBI A.%
+, R{\"u}hm, W.%
+, Wakeford, R.%
+, Woloschak, G\BPBI E.%
+\BCBL {}\ \BBA {} Laurier, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{Nov}{01}.
+\newblock
+{\BBOQ}\APACrefatitle {Radiation dose rate effects: what is new and what is needed?} {Radiation dose rate effects: what is new and what is needed?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Radiation and Environmental Biophysics}{61}{4}{507-543}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1007/s00411-022-00996-0} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s00411-022-00996-0} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Marshall%
+\ \BBA {} Bortnik%
+}{%
+Marshall%
+\ \BBA {} Bortnik%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+marshall2018}
+\APACinsertmetastar {%
+marshall2018}%
+\begin{APACrefauthors}%
+Marshall, R\BPBI A.%
+\BCBT {}\ \BBA {} Bortnik, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Pitch Angle Dependence of Energetic Electron Precipitation: Energy Deposition, Backscatter, and the Bounce Loss Cone} {Pitch angle dependence of energetic electron precipitation: Energy deposition, backscatter, and the bounce loss cone}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research: Space Physics}{123}{3}{2412-2423}.
+\newblock
+\begin{APACrefURL} \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2017JA024873} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1002/2017JA024873} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+McMurchie%
+}{%
+McMurchie%
+}{%
+{\protect \APACyear {2022}}%
+}]{%
+mcmurchie2022}
+\APACinsertmetastar {%
+mcmurchie2022}%
+\begin{APACrefauthors}%
+McMurchie, E\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2022}.
+\unskip\
+\newblock
+\APACrefbtitle {Quantifying Radiation Effects of Energetic Electron Precipitation from the Van Allen Radiation Belts into the Earth’s Atmosphere} {Quantifying radiation effects of energetic electron precipitation from the van allen radiation belts into the earth’s atmosphere}\ \APACtypeAddressSchool {\BUMTh}{}{}.
+\unskip\
+\newblock
+\APACaddressSchool {}{University of Colorado at Boulder}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mertens%
+, Meier%
+, Brown%
+, Norman%
+\BCBL {}\ \BBA {} Xu%
+}{%
+Mertens%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+mertens2013}
+\APACinsertmetastar {%
+mertens2013}%
+\begin{APACrefauthors}%
+Mertens, C\BPBI J.%
+, Meier, M\BPBI M.%
+, Brown, S.%
+, Norman, R\BPBI B.%
+\BCBL {}\ \BBA {} Xu, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {NAIRAS aircraft radiation model development, dose climatology, and initial validation} {Nairas aircraft radiation model development, dose climatology, and initial validation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{11}{10}{603-635}.
+\newblock
+\begin{APACrefURL} \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/swe.20100} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1002/swe.20100} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Niehof%
+, Morley%
+, Welling%
+\BCBL {}\ \BBA {} Larsen%
+}{%
+Niehof%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+spacepy2}
+\APACinsertmetastar {%
+spacepy2}%
+\begin{APACrefauthors}%
+Niehof, J\BPBI T.%
+, Morley, S\BPBI K.%
+, Welling, D\BPBI T.%
+\BCBL {}\ \BBA {} Larsen, B\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The SpacePy space science package at 12 years} {The spacepy space science package at 12 years}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Frontiers in Astronomy and Space Sciences}{Volume 9 - 2022}{}{}.
+\newblock
+\begin{APACrefURL} \url{https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2022.1023612} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3389/fspas.2022.1023612} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Selesnick%
+, Tu%
+, Yando%
+, Millan%
+\BCBL {}\ \BBA {} Redmon%
+}{%
+Selesnick%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+selesnick2020}
+\APACinsertmetastar {%
+selesnick2020}%
+\begin{APACrefauthors}%
+Selesnick, R\BPBI S.%
+, Tu, W.%
+, Yando, K.%
+, Millan, R\BPBI M.%
+\BCBL {}\ \BBA {} Redmon, R\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {POES/MEPED Angular Response Functions and the Precipitating Radiation Belt Electron Flux} {Poes/meped angular response functions and the precipitating radiation belt electron flux}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research: Space Physics}{125}{9}{e2020JA028240}.
+\newblock
+\begin{APACrefURL} \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020JA028240} \end{APACrefURL}
+\newblock
+\APACrefnote{e2020JA028240 10.1029/2020JA028240}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2020JA028240} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shah%
+, Sachs%
+\BCBL {}\ \BBA {} Wilson%
+}{%
+Shah%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+shah2014}
+\APACinsertmetastar {%
+shah2014}%
+\begin{APACrefauthors}%
+Shah, D\BPBI J.%
+, Sachs, R\BPBI K.%
+\BCBL {}\ \BBA {} Wilson, D\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{01}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Radiation-induced cancer: a modern view} {Radiation-induced cancer: a modern view}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{British Journal of Radiology}{85}{1020}{e1166-e1173}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1259/bjr/25026140} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1259/bjr/25026140} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{S}teven {K}.~{M}orley%
+\ \protect \BOthers {.}}{%
+{S}teven {K}.~{M}orley%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+spacepy1}
+\APACinsertmetastar {%
+spacepy1}%
+\begin{APACrefauthors}%
+{S}teven {K}.~{M}orley%
+, {D}aniel {T}.~{W}elling%
+, {J}osef {K}oller%
+, {B}rian {A}.~{L}arsen%
+, {M}ichael {G}.~{H}enderson%
+\BCBL {}\ \BBA {} {J}onathan {N}iehof.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{S}pace{P}y - {A} {P}ython-based {L}ibrary of {T}ools for the {S}pace {S}ciences} {{S}pace{P}y - {A} {P}ython-based {L}ibrary of {T}ools for the {S}pace {S}ciences}.{\BBCQ}
+\newblock
+\BIn{} {S}t\'efan van~der {W}alt\ \BBA {} {J}arrod {M}illman\ (\BEDS), \APACrefbtitle {{P}roceedings of the 9th {P}ython in {S}cience {C}onference} {{P}roceedings of the 9th {P}ython in {S}cience {C}onference}\ (\BPG~67 - 72).
+\newblock
+\begin{APACrefDOI} \doi{10.25080/Majora-92bf1922-00c} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tobiska%
+\ \protect \BOthers {.}}{%
+Tobiska%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+tobiska2016}
+\APACinsertmetastar {%
+tobiska2016}%
+\begin{APACrefauthors}%
+Tobiska, W\BPBI K.%
+, Bouwer, D.%
+, Smart, D.%
+, Shea, M.%
+, Bailey, J.%
+, Didkovsky, L.%
+\BDBL {}Yoon, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Global real-time dose measurements using the Automated Radiation Measurements for Aerospace Safety (ARMAS) system} {Global real-time dose measurements using the automated radiation measurements for aerospace safety (armas) system}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{14}{11}{1053-1080}.
+\newblock
+\begin{APACrefURL} \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2016SW001419} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1002/2016SW001419} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tobiska%
+\ \protect \BOthers {.}}{%
+Tobiska%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+tobiska2018}
+\APACinsertmetastar {%
+tobiska2018}%
+\begin{APACrefauthors}%
+Tobiska, W\BPBI K.%
+, Didkovsky, L.%
+, Judge, K.%
+, Weiman, S.%
+, Bouwer, D.%
+, Bailey, J.%
+\BDBL {}Fuschino, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Analytical Representations for Characterizing the Global Aviation Radiation Environment Based on Model and Measurement Databases} {Analytical representations for characterizing the global aviation radiation environment based on model and measurement databases}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{16}{10}{1523-1538}.
+\newblock
+\begin{APACrefURL} \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018SW001843} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2018SW001843} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Xu%
+, Celestin%
+\BCBL {}\ \BBA {} Pasko%
+}{%
+Xu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+xu2012}
+\APACinsertmetastar {%
+xu2012}%
+\begin{APACrefauthors}%
+Xu, W.%
+, Celestin, S.%
+\BCBL {}\ \BBA {} Pasko, V\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Source altitudes of terrestrial gamma-ray flashes produced by lightning leaders} {Source altitudes of terrestrial gamma-ray flashes produced by lightning leaders}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Geophysical Research Letters}{39}{8}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Xu%
+, Marshall%
+\BCBL {}\ \BBA {} Tobiska%
+}{%
+Xu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+xu2021}
+\APACinsertmetastar {%
+xu2021}%
+\begin{APACrefauthors}%
+Xu, W.%
+, Marshall, R\BPBI A.%
+\BCBL {}\ \BBA {} Tobiska, W\BPBI K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Method for Calculating Atmospheric Radiation Produced by Relativistic Electron Precipitation} {A method for calculating atmospheric radiation produced by relativistic electron precipitation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{19}{12}{e2021SW002735}.
+\newblock
+\begin{APACrefURL} \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2021SW002735} \end{APACrefURL}
+\newblock
+\APACrefnote{e2021SW002735 2021SW002735}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2021SW002735} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
