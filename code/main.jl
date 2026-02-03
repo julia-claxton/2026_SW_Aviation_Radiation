@@ -591,6 +591,7 @@ function fraction_contributed_by_out_of_range_gammas()
     plot!(extrap_gamma, dose["altitude_km"], label = "μ_en flat extrapolated")
     plot!(ignore_gamma, dose["altitude_km"], linestyle = :dash, label = "High E gamma ingored")
     plot!(extrap_gamma .- ignore_gamma, dose["altitude_km"])
+    hline!([11], color = :grey, linestyle = :dash)
     display(plot!())
 end
 
@@ -692,7 +693,7 @@ function move_ams_energies_from_results()
 end
 
 results_dir = "$(TOP_LEVEL)/data/GLYPHS"
-
+#=
 save_example_energy_histograms()
 save_elfin_example_event()
 save_stopping_power()
@@ -701,38 +702,9 @@ save_elfin_derived_doserates()
 save_example_armas_data()
 
 save_conjunction_data()
-
+=#
 #find_elfin_spectra()
 #view_elfin_spectra("$(TOP_LEVEL)/results/percentile_98_elfin_spectra.csv")
 
 #rep_explained_fraction_of_excess()
-#fraction_contributed_by_out_of_range_gammas()
-
-#=
-p, e = get_beams(results_dir)
-sortvec = sortperm(p)
-p = p[sortvec]
-e = e[sortvec]
-
-for i in eachindex(p)
-    data = get_spectra(results_dir, p[i], e[i])
-
-    heatmap(log10.(data["proton_counts"]),
-        title = "$(p[i]) $(e[i])",
-        bg = :black,
-        clims = (-2, 6)
-    )
-    display(plot!())
-end
-=#
-#=
-source_dir = "/Users/luna/Research/geant4/Aviation_GLYPHS/_isotropic_beams"
-
-data = get_ams02_spectrum()
-ams_energies_keV = 1e6 .* data["alpha_energy_bins_mean_GeV"]
-_, existing_energies = get_beams(results_dir, input_particle = "alpha")
-
-vline(log10.(ams_energies_keV))
-scatter!(log10.(existing_energies), ones(length(existing_energies)))
-display(plot!())
-=#
+fraction_contributed_by_out_of_range_gammas()

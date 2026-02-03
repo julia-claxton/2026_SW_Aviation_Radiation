@@ -570,11 +570,11 @@ def excess_doserate_comparison():
     # Save figure
     my_savefig(fig, "excess_dose_comparison")
 
-#stopping_power()
-#example_model_histograms()
-#gcr_dose()
-#case_studies()
+stopping_power()
+example_model_histograms()
+gcr_dose()
+case_studies()
 armas_residuals()
-#elfin_example_data()
-#electron_dose()
-#excess_doserate_comparison()
+elfin_example_data()
+electron_dose()
+excess_doserate_comparison()
