@@ -1,3 +1,6 @@
+# Peer review files
+paper/reviews/*
+
 # Notebook stuff
 *.gif
 notebook*

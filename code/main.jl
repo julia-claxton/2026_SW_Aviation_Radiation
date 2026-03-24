@@ -331,13 +331,18 @@ function save_conjunction_data(; results_dir = "$(TOP_LEVEL)/data/GLYPHS", show_
     conjunction_idxs = findall([Date(el) in ams02_coverage for el in armas_coverage["start_times"]])
 
     # Result arrays
+    dose_bin_edges = 0:.5:10
     residual_bin_edges = -5.25:.5:5.25
-    glyphs_residuals = zeros(length(residual_bin_edges)-1)
-    nairas_residuals = zeros(length(residual_bin_edges)-1)
     
     altitude_bin_edges = 0:.25:30
     excess_dose_bin_edges = 10.0 .^ (-2:.1:1)
+
+    glyphs_residuals = zeros(length(residual_bin_edges)-1)
+    nairas_residuals = zeros(length(residual_bin_edges)-1)
     excess_dose_histogram = zeros(length(altitude_bin_edges)-1, length(excess_dose_bin_edges)-1)
+    glyphs_dose_histogram = zeros(length(dose_bin_edges)-1)
+    nairas_dose_histogram = zeros(length(dose_bin_edges)-1)
+    armas_dose_histogram = zeros(length(dose_bin_edges)-1)
 
     excess_doserate = Float64[]
     altitude = Float64[]
@@ -381,6 +386,10 @@ function save_conjunction_data(; results_dir = "$(TOP_LEVEL)/data/GLYPHS", show_
         lock(writelock) do
             glyphs_residuals .+= exact_1dhistogram(glyphs_Δdr, residual_bin_edges)
             nairas_residuals .+= exact_1dhistogram(nairas_Δdr, residual_bin_edges)
+
+            glyphs_dose_histogram .+= exact_1dhistogram(glyphs_gcr, dose_bin_edges)
+            nairas_dose_histogram .+= exact_1dhistogram(nairas, dose_bin_edges)
+            armas_dose_histogram .+= exact_1dhistogram(armas_doserate[mask], dose_bin_edges)
             
             excess_dose_histogram .+= exact_2dhistogram(underestimation_altitudes, Δdr[Δdr .> 0], altitude_bin_edges, excess_dose_bin_edges)
 
@@ -403,7 +412,12 @@ function save_conjunction_data(; results_dir = "$(TOP_LEVEL)/data/GLYPHS", show_
 
         altitude_bin_edges = altitude_bin_edges,
         excess_dose_bin_edges = excess_dose_bin_edges,
-        excess_dose_histogram = excess_dose_histogram
+        excess_dose_histogram = excess_dose_histogram,
+
+        dose_bin_edges = dose_bin_edges,
+        glyphs_dose_histogram = glyphs_dose_histogram,
+        nairas_dose_histogram = nairas_dose_histogram,
+        armas_dose_histogram = armas_dose_histogram
     )
     npzwrite("$(TOP_LEVEL)/data/figure_data/excess_doserate_datapoints.npz",
         altitude = altitude,
@@ -701,10 +715,11 @@ save_gcr_spectrum()
 save_elfin_derived_doserates()
 save_example_armas_data()
 
-save_conjunction_data()
 =#
+save_conjunction_data()
+
 #find_elfin_spectra()
 #view_elfin_spectra("$(TOP_LEVEL)/results/percentile_98_elfin_spectra.csv")
 
 #rep_explained_fraction_of_excess()
-fraction_contributed_by_out_of_range_gammas()
+#fraction_contributed_by_out_of_range_gammas()
