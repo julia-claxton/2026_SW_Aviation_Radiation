@@ -692,6 +692,38 @@ McMurchie, E\BPBI J.%
 
 \bibitem [\protect \citeauthoryear {%
 Mertens%
+, Gronoff%
+\BCBL {}\ \BBA {} Phoenix%
+}{%
+Mertens%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+mertens2025}
+\APACinsertmetastar {%
+mertens2025}%
+\begin{APACrefauthors}%
+Mertens, C\BPBI J.%
+, Gronoff, G\BPBI P.%
+\BCBL {}\ \BBA {} Phoenix, D\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {NAIRAS Version 3 Atmospheric Ionizing Radiation Validation: Comparisons to RaD-X Measurements} {Nairas version 3 atmospheric ionizing radiation validation: Comparisons to rad-x measurements}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{23}{4}{e2024SW004296}.
+\newblock
+\begin{APACrefURL} \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2024SW004296} \end{APACrefURL}
+\newblock
+\APACrefnote{e2024SW004296 2024SW004296}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2024SW004296} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mertens%
 , Meier%
 , Brown%
 , Norman%
