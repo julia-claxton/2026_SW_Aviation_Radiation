@@ -48,7 +48,7 @@ function flux_to_doserate(flux_data; results_dir = "$(TOP_LEVEL)/data/GLYPHS", e
 
     # Loop over species and sum up doserate
     doserate = zeros(length(dummy_data["altitude_km"]))
-    for species in ["proton", "electron", "alpha", "gamma"] 
+    for species in ["proton", "electron", "alpha", "gamma"]#, "muon"] 
         # Get stopping power
         energy_min_keV, energy_max_keV, stopping_power = get_stopping_power(species, extrapolate_μ_en = extrapolate_μ_en)
             # Input units: keV
@@ -81,7 +81,7 @@ function beam_weights_to_flux(beam_particles, beam_energies_keV, beam_fluxes; re
     dummy_data = get_spectra(results_dir, dummy_particles[begin], dummy_energies[begin])
 
     # Allocate results
-    species_to_tally = ["proton", "electron", "gamma", "alpha"]
+    species_to_tally = ["proton", "electron", "gamma", "alpha", "muon"]
     result = Dict{String, Any}()
     result["altitude_km"] = dummy_data["altitude_km"]
     result["energy_bins_mean_keV"] = dummy_data["energy_bins_mean_keV"]
@@ -158,7 +158,7 @@ function get_stopping_power(incident_particle; extrapolate_μ_en = true)
     # Special behavior for photons since energy deposition is reported differently for gammas
     if incident_particle == "gamma"; return photon_energy_deposition(extrapolate_μ_en = extrapolate_μ_en); end
     
-    if incident_particle ∉ ["proton", "electron", "alpha"]
+    if incident_particle ∉ ["proton", "electron", "alpha", "muon"]
         error("Argument \"$(incident_particle)\" not recognized.")
     end
 
@@ -323,30 +323,6 @@ function plot_gcr_coverage(; results_dir = "$(TOP_LEVEL)/data/GLYPHS")
         linewidth = 2
     )
     display("image/png", plot!())
-end
-
-function smooth_gamma_flux!(flux_data; tolerance = .1)
-    boundary_idxs = findall( (flux_data["altitude_km"] .% 1) .≤ tolerance )
-
-
-    heatmap(log10.(flux_data["gamma_flux"]), bg = :black)
-    display(plot!())
-
-
-    flux_data["gamma_flux"][boundary_idxs,:] .= 0
-
-    for altitude_idx in boundary_idxs
-        idxs_to_average = [altitude_idx - 1, altitude_idx + 1]
-
-        deleteat!(idxs_to_average, idxs_to_average .≤ 0)
-        deleteat!(idxs_to_average, idxs_to_average .> length(flux_data["altitude_km"]))
-
-        flux_data["gamma_flux"][altitude_idx, :] .= [mean(flux_data["gamma_flux"][idxs_to_average, E]) for E in eachindex(flux_data["energy_bins_mean_keV"])]
-    end
-
-    heatmap(log10.(flux_data["gamma_flux"]), bg = :black)
-    display(plot!())
-    error("This sucks. Fix it.")
 end
 
 #bethe_formula_silicon("electron", 1000)

@@ -19,7 +19,7 @@ include("./Julia_ELFIN_Tools/Visualization.jl")
 const TOP_LEVEL = dirname(@__DIR__)
 
 function save_example_energy_histograms()
-    E = 1_114_242.9 # Beam energy, keV
+    E = 1_104_310.5 # Beam energy, keV
     data = get_spectra(results_dir, "proton", E)
     delete!(data, "input_particle")
     npzwrite("$(TOP_LEVEL)/data/figure_data/example_histograms.npz", data)
@@ -55,11 +55,13 @@ function save_stopping_power()
     proton_min_kev, proton_max_kev, proton_stopping_power = get_stopping_power("proton")
     electron_min_kev, electron_max_kev, electron_stopping_power = get_stopping_power("electron")
     alpha_min_kev, alpha_max_kev, alpha_stopping_power = get_stopping_power("alpha")
+    muon_min_kev, muon_max_kev, muon_stopping_power = get_stopping_power("muon")
     photon_min_kev, photon_max_kev, photon_stopping_power = get_stopping_power("gamma")
 
     proton_energy_kev = collect(logrange(proton_min_kev, proton_max_kev, 1000))
     electron_energy_kev = collect(logrange(electron_min_kev, electron_max_kev, 1000))
     alpha_energy_kev = collect(logrange(alpha_min_kev, alpha_max_kev, 1000))
+    muon_energy_kev = collect(logrange(muon_min_kev, muon_max_kev, 1000))
     photon_energy_kev = collect(logrange(photon_min_kev, 20e3, 1000)) # 20e3 = end of tables, afterwards = extrapolation
     photon_energy_extrapolate_kev = collect(logrange(20e3, photon_max_kev, 10))
 
@@ -73,6 +75,9 @@ function save_stopping_power()
 
             "alpha_energy_kev" => alpha_energy_kev,
             "alpha_stopping_power" => alpha_stopping_power.(alpha_energy_kev),
+
+            "muon_energy_kev" => muon_energy_kev,
+            "muon_stopping_power" => muon_stopping_power.(muon_energy_kev),
 
             "photon_energy_kev" => photon_energy_kev,
             "photon_mu_en" => photon_stopping_power.(photon_energy_kev) ./ photon_energy_kev,
@@ -177,7 +182,6 @@ function elfin_doserate(start_time, satellite)
         # Units # m⁻² s⁻¹
 
     # Calculate doserate
-    results_dir = "$(TOP_LEVEL)/data/GLYPHS"
     beam_particles, beam_energies_keV = get_beams(results_dir, input_particle = "electron")
 
     elfin_energies = round.(event.energy_bins_mean)
@@ -707,6 +711,7 @@ function move_ams_energies_from_results()
 end
 
 results_dir = "$(TOP_LEVEL)/data/GLYPHS"
+
 #=
 save_example_energy_histograms()
 save_elfin_example_event()
@@ -714,7 +719,9 @@ save_stopping_power()
 save_gcr_spectrum()
 save_elfin_derived_doserates()
 save_example_armas_data()
+=#
 
+#=
 save_conjunction_data()
 =#
 
