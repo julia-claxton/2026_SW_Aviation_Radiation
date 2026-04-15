@@ -63,6 +63,12 @@ function preprocess_spectra(results_dir, input_particle, input_energy_keV)
     results["input_energy_keV"] = input_energy_keV
 
     for particle in ["electron", "proton", "gamma", "alpha", "muon"]
+        # Muons were never produced by electron inputs so we didn't include datafiles for them. Thus, skip muons for electron input.
+        if (input_particle == "electron") && (particle == "muon")
+            results["muon_counts"] = zeros(size(results["electron_counts"]))
+            continue
+        end
+
         path = glob("$(input_particle)_input_$(energy_string)keV_$(highest_n_particles)particles_$(particle)_spectra.csv", results_dir)[1]
         data = readdlm(path, ',', skipstart = 0)
         counts = float.(data[2:end, 2:end])

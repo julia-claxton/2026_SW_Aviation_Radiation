@@ -710,17 +710,17 @@ function move_ams_energies_from_results()
     end
 end
 
-results_dir = "$(TOP_LEVEL)/data/GLYPHS"
+@warn "todo put muons in the data folder and add switch at below line for highest_n_particles to reduce"
+#if (input_particle == "electron") && (particle == "muon")
 
-#=
+
+results_dir = "$(TOP_LEVEL)/data/GLYPHS"
 save_example_energy_histograms()
 save_elfin_example_event()
 save_stopping_power()
 save_gcr_spectrum()
 save_elfin_derived_doserates()
 save_example_armas_data()
-=#
-
 #=
 save_conjunction_data()
 =#
