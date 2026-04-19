@@ -1,4 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL claxton2026_aviation_revision_0.tex   Sun Apr 19 09:56:02 2026
+%DIF ADD claxton2026_aviation_revision_1.tex   Sun Apr 19 11:58:39 2026
 % AGUJournalTemplate.tex: this template file is for articles formatted with LaTeX
 %
 % This file includes commands and instructions
@@ -86,6 +89,84 @@
 \journalname{Space Weather}
 
 \hfuzz=100pt % Stop giving me overfull hbox errors for every single line that wraps!!!
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+\providecommand{\DIFmodbegin}{} %DIF PREAMBLE
+\providecommand{\DIFmodend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+\newcommand{\DIFscaledelfig}{0.5}
+%DIF HIGHLIGHTGRAPHICS PREAMBLE %DIF PREAMBLE
+\RequirePackage{settobox} %DIF PREAMBLE
+\RequirePackage{letltxmacro} %DIF PREAMBLE
+\newsavebox{\DIFdelgraphicsbox} %DIF PREAMBLE
+\newlength{\DIFdelgraphicswidth} %DIF PREAMBLE
+\newlength{\DIFdelgraphicsheight} %DIF PREAMBLE
+% store original definition of \includegraphics %DIF PREAMBLE
+\LetLtxMacro{\DIFOincludegraphics}{\includegraphics} %DIF PREAMBLE
+\newcommand{\DIFaddincludegraphics}[2][]{{\color{blue}\fbox{\DIFOincludegraphics[#1]{#2}}}} %DIF PREAMBLE
+\newcommand{\DIFdelincludegraphics}[2][]{% %DIF PREAMBLE
+\sbox{\DIFdelgraphicsbox}{\DIFOincludegraphics[#1]{#2}}% %DIF PREAMBLE
+\settoboxwidth{\DIFdelgraphicswidth}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\settoboxtotalheight{\DIFdelgraphicsheight}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\scalebox{\DIFscaledelfig}{% %DIF PREAMBLE
+\parbox[b]{\DIFdelgraphicswidth}{\usebox{\DIFdelgraphicsbox}\\[-\baselineskip] \rule{\DIFdelgraphicswidth}{0em}}\llap{\resizebox{\DIFdelgraphicswidth}{\DIFdelgraphicsheight}{% %DIF PREAMBLE
+\setlength{\unitlength}{\DIFdelgraphicswidth}% %DIF PREAMBLE
+\begin{picture}(1,1)% %DIF PREAMBLE
+\thicklines\linethickness{2pt} %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\framebox(1,1){}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\line( 1,1){1}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,1){\line(1,-1){1}}}% %DIF PREAMBLE
+\end{picture}% %DIF PREAMBLE
+}\hspace*{3pt}}} %DIF PREAMBLE
+} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbegin}{\DIFaddbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddend}{\DIFaddend} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbegin}{\DIFdelbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelend}{\DIFdelend} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbegin}{\DIFOaddbegin \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbegin}{\DIFOdelbegin \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbeginFL}{\DIFaddbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddendFL}{\DIFaddendFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbeginFL}{\DIFdelbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelendFL}{\DIFdelendFL} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbeginFL}{\DIFOaddbeginFL \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbeginFL}{\DIFOdelbeginFL \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+%DIF COLORLISTINGS PREAMBLE %DIF PREAMBLE
+\RequirePackage{listings} %DIF PREAMBLE
+\RequirePackage{color} %DIF PREAMBLE
+\lstdefinelanguage{DIFcode}{ %DIF PREAMBLE
+%DIF DIFCODE_UNDERLINE %DIF PREAMBLE
+  moredelim=[il][\color{red}\sout]{\%DIF\ <\ }, %DIF PREAMBLE
+  moredelim=[il][\color{blue}\uwave]{\%DIF\ >\ } %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstdefinestyle{DIFverbatimstyle}{ %DIF PREAMBLE
+	language=DIFcode, %DIF PREAMBLE
+	basicstyle=\ttfamily, %DIF PREAMBLE
+	columns=fullflexible, %DIF PREAMBLE
+	keepspaces=true %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim}{\lstset{style=DIFverbatimstyle}}{} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim*}{\lstset{style=DIFverbatimstyle,showspaces=true}}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
 
 \begin{document}
 
@@ -153,7 +234,7 @@
 \begin{keypoints}
   \item An existing simulation is used to predict radiation doses due to galactic cosmic rays (GCRs) and relativistic electron precipitation (REP).
   \item Our predictions of GCR dose rates are in statistical agreement with data, but do not explain a small population of higher dose rates.
-  \item REP-induced dose rates are unlikely to account for the difference between GCR modeling and aircraft dosimetry data.
+  \item \DIFdelbegin \DIFdel{We find that }\DIFdelend REP-induced dose rates are unlikely to account for the difference between GCR modeling and aircraft dosimetry data.
 \end{keypoints}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -178,7 +259,7 @@
 %% \begin{abstract} starts the second page
 
 \begin{abstract}
-Radiation from space in the form of galactic cosmic rays (GCRs) generates a persistent background of ionizing radiation in Earth's atmosphere. The dose rate of ionizing radiation due to GCRs increases from sea level to aviation altitudes. The Nowcast of Aerospace Ionizing RAdiation System (NAIRAS) model is a state-of-the-art model for predicting radiation dose rates at aviation altitudes and is used to limit doses to aircrew and passengers. However, dosimetry data from the Automated Radiation Measurements for Aerospace Safety (ARMAS) system flown on commercial aircraft have revealed dose rates at aviation altitudes greater than predicted by NAIRAS. One theory, supported by correlation analyses, posits that these so-called excess dose rates are caused by relativistic electron precipitation (REP) driven by hiss waves in the inner magnetosphere. In this work, we use a validated Monte Carlo model of particle transport through the atmosphere in combination with GCR measurements from low Earth orbit (LEO) to attempt to explain the ARMAS dose rate measurements with GCRs alone. We find that our predicted GCR dose rates are in statistical agreement with the ARMAS data, but still underestimate the dose rates for some events. We then simulate REP using electron measurements from LEO and find that REP can only explain up to about $3\%$ of the difference between GCR dose rates and ARMAS data in the most extreme cases. With support from previous literature, we conclude that REP is unlikely to be the source of the discrepancies between GCR dose rate predictions and ARMAS measurements.
+Radiation from space in the form of galactic cosmic rays (GCRs) generates a persistent background of ionizing radiation in Earth's atmosphere. The dose rate of ionizing radiation due to GCRs increases from sea level to aviation altitudes. The Nowcast of Aerospace Ionizing RAdiation System (NAIRAS) model is \DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{a }\DIFaddend state-of-the-art model for predicting radiation dose rates at aviation altitudes and is used to limit doses to aircrew and passengers. However, dosimetry data from the Automated Radiation Measurements for Aerospace Safety (ARMAS) system flown on commercial aircraft have revealed dose rates at aviation altitudes greater than predicted by NAIRAS. One theory, supported by correlation analyses, posits that these so-called excess dose rates are caused by relativistic electron precipitation (REP) driven by hiss waves in the inner magnetosphere. In this work, we use a validated Monte Carlo model of particle transport through the atmosphere in combination with GCR measurements from low Earth orbit (LEO) to attempt to explain the ARMAS dose rate measurements with GCRs alone. We find that our predicted GCR dose rates are in statistical agreement with the ARMAS data, but still underestimate the dose rates for some events. We then simulate REP using electron measurements from LEO and find that REP can only explain up to about $3\%$ of the difference between GCR dose rates and ARMAS data in the most extreme cases. With support from previous literature, we conclude that REP is unlikely to be the source of the discrepancies between GCR dose rate predictions and ARMAS measurements.
 \end{abstract}
 
 \section*{Plain Language Summary}
@@ -187,14 +268,18 @@ Radiation from space in the form of galactic cosmic rays (GCRs) generates a pers
 Background radiation levels are higher in aircraft than they are on the ground due to their proximity to space. The airline industry relies on advanced computer simulations to predict high-altitude radiation levels to limit radiation doses to aircrew and passengers. However, measurements of radiation taken on airplanes have revealed occasional radiation spikes that these simulations did not predict. The reason for these spikes is currently unknown. One leading theory says that the spikes could be caused by a well-known process where natural radio waves in space divert extra radiation from space to Earth. In this paper, we test that theory using our own computer simulation and data from radiation detectors in space. We find that radiation sent into Earth's atmosphere by radio waves is unlikely to be the reason for the spikes and that further investigation is required to determine why our radiation predictions do not match the aircraft measurements.
 
 \section{Introduction}
-Relativistic charged particles from space are a major source of radiation on Earth. These particles collide with the atmosphere and create showers of secondary particles that can propagate down to tens of kilometers above sea level and even reach the ground. Exposure to these energetic particles and their secondary showers can ionize human tissue. Lifetime exposure to ionizing radiation in conjunction with peak dose rate is a major predictive factor in the development of cancerous and non-cancerous adverse health effects \cite{lowe2022, shah2014}. At commercial aviation altitudes (approximately $8$ to $11$~km above sea level), ionizing radiation doses from spaceborne particles are elevated compared to sea level due to a reduction in atmospheric shielding of these particles. Therefore, frequent fliers and aircrew are exposed to higher lifetime radiation exposure and peak dose rates than people on the ground. We thus require accurate models of radiation dose rates as a function of altitude to limit radiation doses to aircrew and passengers and ensure human safety. One such model of ionizing radiation dose rates at aviation altitudes is the Nowcast of Aerospace Ionizing RAdiation System (NAIRAS) model maintained by NASA \cite{mertens2013}. NAIRAS predicts background radiation doses due to galactic cosmic rays (GCRs) and solar energetic particles (SEPs).
+Relativistic charged particles from space are a major source of radiation on Earth. These particles collide with the atmosphere and create showers of secondary particles that can propagate down to tens of kilometers above sea level and even reach the ground. Exposure to these energetic particles and their secondary showers can ionize human tissue. Lifetime exposure to ionizing radiation in conjunction with peak dose rate is a major predictive factor in the development of cancerous and non-cancerous adverse health effects \cite{lowe2022, shah2014}. At commercial aviation altitudes (approximately $8$ to $11$~km above sea level), ionizing radiation doses from spaceborne particles are elevated compared to sea level due to a reduction in atmospheric shielding of these particles. Therefore, frequent fliers and aircrew are exposed to higher lifetime radiation exposure and peak dose rates than people on the ground. We thus require accurate models of radiation dose rates as a function of altitude to limit radiation doses to aircrew and passengers and ensure human safety. \DIFdelbegin \DIFdel{The industry standard for modeling }\DIFdelend \DIFaddbegin \DIFadd{One such model of }\DIFaddend ionizing radiation dose rates at aviation altitudes is the Nowcast of Aerospace Ionizing RAdiation System (NAIRAS) model maintained by NASA \cite{mertens2013}. NAIRAS predicts background radiation doses due to galactic cosmic rays (GCRs) and solar energetic particles (SEPs).
 
 The Automated Radiation Measurements for Aerospace Safety (ARMAS) system is a set of dosimeters that have been flown in the last decade on commercial aircraft to monitor the radiation environment at aviation altitudes \cite{tobiska2016}. Data from the ARMAS system has revealed sporadic dose rate spikes at aviation altitudes, sometimes in excess of two times the NAIRAS-predicted dose rate \cite{tobiska2016, tobiska2018}. The cause of these excess doses is unknown, and a number of theories have emerged to explain them. One theory posits that relativistic electron precipitation (REP) may cause these excess doses. While energetic electrons cannot reach aviation altitudes, their secondary particles can, in particular X-rays and gamma rays produced by bremsstrahlung in the atmosphere. This theory is supported by correlation analyses \cite{aryan2023, aryan2025a, aryan2025b}, but has not yet been physically modeled to constrain the potential contribution of electron precipitation to excess dose rates.
 
 In this work, we use energetic electron data collected from low Earth orbit (LEO) in combination with a validated particle precipitation model to quantify the contribution of electron precipitation to radiation dose rates at aviation altitudes. First, we use galactic cosmic ray (GCR) data measured in LEO in combination with a validated model of energetic particle precipitation to attempt to explain the ARMAS dose rates with GCRs alone. We then compare our model estimates to ARMAS data and identify cases of excess dose rates. Next, we forward model precipitating electron fluxes measured from LEO through the atmosphere to predict the radiation dose rate caused by radiation belt electron precipitation. We then compare the electron-induced dose rate to the excess dose rates between our GCR modeling and ARMAS. We find that REP-induced dose rates are unlikely to explain the excess dose rates, in agreement with previous literature.
 
 \section{Background}
-There are two well-known sources of background radiation doses at aviation altitudes: SEPs and GCRs \cite{mertens2013}. A state-of-the-art model for predicting radiation doses across the Earth's atmosphere, NAIRAS \cite{mertens2013}, accounts for both of these radiation types. NAIRAS version 1 accounts for SEP and GCRs, while NAIRAS version 3 also includes effects due to trapped (but not precipitating) energetic particles \cite{mertens2025}. NAIRAS parameterizes incoming GCR spectra using high-latitude neutron counts. Neutrons are produced as a cascade product from GCRs incident on the atmosphere, and thus their detection rate at the ground serves as an indirect measure of GCR incidence. NAIRAS then propagates the derived GCR spectrum through the heliosphere, magnetosphere, and atmosphere to produce dose rate predictions. We do not discuss SEP contributions to dose rate in this paper, as there are no ARMAS data records correlated with SEP events. NAIRAS was validated with aircraft dosimeter data from the RAD-X balloon campaign showing agreement within the measurement uncertainty of $\pm 30\%$.
+There are two well-known sources of background radiation doses at aviation altitudes: SEPs and GCRs \cite{mertens2013}. \DIFdelbegin \DIFdel{The }\DIFdelend \DIFaddbegin \DIFadd{A }\DIFaddend state-of-the-art model for predicting radiation doses across the Earth's atmosphere, NAIRAS \cite{mertens2013}, accounts for both of these radiation types. NAIRAS \DIFaddbegin \DIFadd{version 1 accounts for SEP and GCRs, while NAIRAS version 3 also includes effects due to trapped (but not precipitating) energetic particles \mbox{%DIFAUXCMD
+\cite{mertens2025}}\hskip0pt%DIFAUXCMD
+. NAIRAS }\DIFaddend parameterizes incoming GCR spectra using high-latitude neutron counts. Neutrons are produced as a cascade product from GCRs incident on the atmosphere, and thus their detection rate at the ground serves as an indirect measure of GCR incidence. NAIRAS then propagates the derived GCR spectrum through the heliosphere, magnetosphere, and atmosphere to produce dose rate predictions. We do not discuss SEP contributions to dose rate in this paper, as there are no ARMAS data records correlated with SEP events. NAIRAS \DIFdelbegin \DIFdel{, currently in version 3, }\DIFdelend was validated with aircraft dosimeter data from the RAD-X balloon campaign showing agreement within the measurement uncertainty of $\pm 30\%$.
+\DIFdelbegin \DIFdel{In this work, we utilize NAIRAS version 3 values that are provided with ARMAS data.
+}\DIFdelend 
 
 \citeA{tobiska2016} reported measurements from the ARMAS system revealing unexpected dose rate spikes at aviation altitudes, in some cases doubling NAIRAS version 2 predictions. These elevated dose rates were observed between L-shells of $1.5$ and $5$. This L-shell range led the authors to speculate that the dose rate spikes could be caused by relativistic electron precipitation (REP) driven by electromagnetic ion-cyclotron (EMIC) waves in the outer radiation belt.
   % tobiska2016: "Another intriguing suggestion is that this radiation enhancement could be from energetic electrons or O+ precipitating into higher altitudes from the outer radiation belt due to electromagnetic ion cyclotron (EMIC) waves (A. Halford, private communication, 2016). In addition, backscattered albedo electrons (J. Adams, private communication, 2016) may contribute radiation at higher altitudes than this flight as well as gamma rays from large storm or hurricane lightning, and sprite events may contribute to a radiation field enhancement. The Case 2 higher dose rates did not occur at altitudes where albedo electrons are expected, nor was the flight in the vicinity of a large tropospheric storm"
@@ -214,7 +299,7 @@ In this work, we use a validated Monte Carlo model in conjunction with the highe
 % \cite{aryan2023} the bortnik hiss correlation paper. RBSP EMFISIS for wave data. finds no EMIC PSD correlation. finds hiss PSD correlation. finds weak hiss PSD correlation.
 
 % \cite{aryan2025a} basically the same as last paper but with some time/L shift analysis. finds the same hiss correlation that is localized in L and MLT. shows L-MLT coverage that extremely heavily favors the post-noon sector.
-  
+
 % \cite{aryan2025b} time shift analysis paper, finds strong correlation for small L and MLT shifts, with eastward MLT drift.
 
 % NAIRAS https://agupubs.onlinelibrary.wiley.com/doi/10.1002/swe.20100
@@ -226,13 +311,13 @@ In this work, we utilize the Simulation of Energetic Particle Incidence, Ionizat
 \label{section:model:doserate_conversion}
 We begin by attempting to explain the ARMAS dose rate measurements using an upper-bound estimate of GCR-induced dose rates. In addition to validating the SEPIIDA model, these simulations provide a picture of data-driven dose rates produced by GCRs and their day-to-day variability based on direct measurements from LEO.
 
-To model the dose rate induced by GCRs at aviation altitudes, we needed to calculate the dose rate induced by a given set of precipitating particles. For protons, electrons, muons, and alpha particles, we utilized the fact that particle flux multiplied by stopping power in a material of interest (e.g. silicon) yields a dose rate in that material. The cumulative dose rate induced by protons, electrons, muons, and alpha particles at altitude $h$ is given by
+To model the dose rate induced by GCRs at aviation altitudes, we needed to calculate the dose rate induced by a given set of precipitating particles. For protons, electrons, \DIFaddbegin \DIFadd{muons, }\DIFaddend and alpha particles, we utilized the fact that particle flux multiplied by stopping power in a material of interest (e.g. silicon) yields a dose rate in that material. The cumulative dose rate induced by protons, electrons, \DIFaddbegin \DIFadd{muons, }\DIFaddend and alpha particles at altitude $h$ is given by
 %
 \begin{equation}
-  \text{DR}_{\text{p}^+,\text{e}^-,\mu^-,\alpha}(h) = \sum_i \sum_E \Phi_i(E,h) \cdot \text{S}_i(E,h),
+  \text{DR}\DIFdelbegin \DIFdel{_{\text{p}^+,\text{e}^-,\alpha}}\DIFdelend \DIFaddbegin \DIFadd{_{\text{p}^+,\text{e}^-,\mu^-,\alpha}}\DIFaddend (h) = \sum_i \sum_E \Phi_i(E,h) \cdot \text{S}_i(E,h),
 \end{equation}
 %
-\noindent where $i$ represents particle species, $E$ is the energy of an incident particle, $\Phi_i(E)$ is the flux of species $i$ at energy $E$, $S$ is the stopping power of silicon for species $i$ at energy $E$, and DR$_{\text{p}^+,\text{e}^-,\mu^-,\alpha}$ is the resultant cumulative dose rate in silicon due to these particles.
+\noindent where $i$ represents particle species, $E$ is the energy of an incident particle, $\Phi_i(E)$ is the flux of species $i$ at energy $E$, $S$ is the stopping power of silicon for species $i$ at energy $E$, and DR\DIFdelbegin \DIFdel{$_{\text{p}^+,\text{e}^-,\alpha}$ }\DIFdelend \DIFaddbegin \DIFadd{$_{\text{p}^+,\text{e}^-,\mu^-,\alpha}$ }\DIFaddend is the resultant cumulative dose rate in silicon due to these particles.
 
 % https://physics.nist.gov/PhysRefData/XrayMassCoef/chap3.html
 High-energy photons are another important source of ionizing radiation doses. Since stopping power is not defined for photons, we estimated the energy deposited in a silicon detector by photons using the X-ray mass energy-absorption coefficient $\mu_\text{en}$. For a given photon, $\mu_\text{en}$ multiplied by the incident photon energy yields the net energy deposition in a target material per unit flux accounting for both energy deposition by the original photon and energy losses via re-radiation of secondaries. Multiplying by a photon flux thus yields the dose rate in silicon due to photons. Thus, for a given flux of photons $\Phi_\gamma$, the photon contribution to dose rate (DR$_\gamma$) is
@@ -244,27 +329,33 @@ High-energy photons are another important source of ionizing radiation doses. Si
 \noindent and the total dose rate (DR) is
 %
 \begin{equation}
-  \text{DR}(h) = \text{DR}_{\text{p}^+,\text{e}^-,\mu^-,\alpha}(h) + \text{DR}_\gamma(h).
+  \text{DR}(h) = \text{DR}\DIFdelbegin \DIFdel{_{\text{p}^+,\text{e}^-,\alpha}}\DIFdelend \DIFaddbegin \DIFadd{_{\text{p}^+,\text{e}^-,\mu^-,\alpha}}\DIFaddend (h) + \text{DR}_\gamma(h).
 \end{equation}
 %
-Stopping power tables were sourced from NIST for protons ($1$~keV to $10$~GeV), electrons ($10$~keV to $1$~GeV), and alphas ($1$~keV to $1$~GeV) \cite{nist-stoppingpower}. Stopping power tables for muons ($10$~MeV to $100$~TeV) were sourced from \citeA{groom2001}. X-ray mass energy-absorption coefficients were sourced from NIST for photons between $1$~keV and $20$~MeV \cite{nist-xrayattenuation}. The value of $\mu_\text{en}$ for photons above $20$~MeV was taken as the value at $20$~MeV, as $\mu_\text{en}$ does not change significantly with energy above $\sim 5$~MeV in the NIST database. This extrapolation added approximately $0.6$~{\ugy}/hr to our predicted GCR dose rates at aviation altitudes. The stopping power and X-ray mass energy-absorption coefficient values used in this work are shown in Figure \ref{figure:stopping_power}.
+Stopping power tables were sourced from NIST for protons ($1$~keV to $10$~GeV), electrons ($10$~keV to $1$~GeV), and alphas ($1$~keV to $1$~GeV) \cite{nist-stoppingpower}. \DIFaddbegin \DIFadd{Stopping power tables for muons ($10$~MeV to $100$~TeV) were sourced from \mbox{%DIFAUXCMD
+\citeA{groom2001}}\hskip0pt%DIFAUXCMD
+. }\DIFaddend X-ray mass energy-absorption coefficients were sourced from NIST for photons between $1$~keV and $20$~MeV \cite{nist-xrayattenuation}. The value of $\mu_\text{en}$ for photons above $20$~MeV was taken as the value at $20$~MeV, as $\mu_\text{en}$ does not change significantly with energy above $\sim 5$~MeV in the NIST database. This extrapolation added approximately $0.6$~{\ugy}/hr to our predicted GCR dose rates at aviation altitudes. The stopping power and X-ray mass energy-absorption coefficient values used in this work are shown in Figure \ref{figure:stopping_power}.
 
 \begin{figure}[H]
   \centering
-  \noindent\includegraphics[width=\textwidth]{figures/stopping_power.pdf}
-  \caption{
+  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures_rev0/stopping_power.pdf}
+%DIFDELCMD <   %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{figures/stopping_power.pdf}
+  \DIFaddendFL \caption{
     Stopping power (left) and X-ray mass energy-absorption coefficient (right) as a function of energy used in this work.
   }
   \label{figure:stopping_power}
 \end{figure}
 
-Since the calculation of dose rate is species- and energy-dependent, we need to record an energy spectrum for every species of interest at every location where we want to calculate a dose rate in our simulation. Since we are interested in the altitude profile of EPP-induced dose rates, we configure SEPIIDA to record the energy spectrum of all electrons, muons, protons, alphas, and photons passing through a set of recording altitudes. These recording altitudes are spaced from sea level to $100$~km altitude in $1$~km increments. After a simulation run is completed, the counts recorded in every energy bin at each recording altitude are divided by the total number of input particles. This division produces a normalized response table giving the number of counts of a given particle that are produced by one precipitating primary particle over the energies and altitudes of interest. An example of these normalized response spectra is shown in Figure \ref{figure:example_histograms}. The spectra shown are the response to a monoenergetic input beam of $10^5$ protons each with an energy of $11$~GeV injected into the simulation at $450$~km with an initial velocity randomly sampled from an isotropically downgoing distribution. Secondary alpha fluxes are negligible and are not shown in the figure. The primary protons are evident as the white line in the top left panel, with the primary energy decreasing at low altitudes. A backscattered population of protons is also visible with lower energy and flux than the precipitating primaries. The $511$~keV photon line due to pair annihilation is evident in the bottom left panel.
+Since the calculation of dose rate is species- and energy-dependent, we need to record an energy spectrum for every species of interest at every location where we want to calculate a dose rate in our simulation. Since we are interested in the altitude profile of EPP-induced dose rates, we configure SEPIIDA to record the energy spectrum of all electrons, \DIFaddbegin \DIFadd{muons, }\DIFaddend protons, alphas, and photons passing through a set of recording altitudes. These recording altitudes are spaced from sea level to $100$~km altitude in $1$~km increments. After a simulation run is completed, the counts recorded in every energy bin at each recording altitude are divided by the total number of input particles. This division produces a normalized response table giving the number of counts of a given particle that are produced by one precipitating primary particle over the energies and altitudes of interest. An example of these normalized response spectra is shown in Figure \ref{figure:example_histograms}. The spectra shown are the response to a monoenergetic input beam of $10^5$ protons each with an energy of \DIFdelbegin \DIFdel{$1.1$}\DIFdelend \DIFaddbegin \DIFadd{$11$}\DIFaddend ~GeV injected into the simulation at $450$~km with an initial velocity randomly sampled from an isotropically downgoing distribution. Secondary alpha fluxes are negligible and are not shown in the figure. The primary protons are evident as the white line in the \DIFdelbegin \DIFdel{leftmost }\DIFdelend \DIFaddbegin \DIFadd{top left }\DIFaddend panel, with the primary energy decreasing at low altitudes. \DIFaddbegin \DIFadd{A backscattered population of protons is also visible with lower energy and flux than the precipitating primaries. }\DIFaddend The $511$~keV photon line due to pair annihilation is evident in the \DIFdelbegin \DIFdel{rightmost }\DIFdelend \DIFaddbegin \DIFadd{bottom left }\DIFaddend panel.
 
 \begin{figure}[H]
   \centering
-  \noindent\includegraphics[width=0.8\textwidth]{figures/example_histograms.pdf}
-  \caption{
-    Example simulated energy spectra as a function of altitude for protons (top left), electrons (top right), photons (bottom left), and muons (bottom right). These spectra are the response to an input beam of $10^5$ protons at $11$~GeV injected with isotropic downgoing incidence into an MSIS atmosphere at $450$~km.
+  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures_rev0/example_histograms.pdf}
+%DIFDELCMD <   %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=0.8\textwidth]{figures/example_histograms.pdf}
+  \DIFaddendFL \caption{
+    Example simulated energy spectra as a function of altitude for protons (\DIFaddbeginFL \DIFaddFL{top }\DIFaddendFL left), electrons (\DIFdelbeginFL \DIFdelFL{center}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{top right}\DIFaddendFL ), \DIFdelbeginFL \DIFdelFL{and }\DIFdelendFL photons (\DIFaddbeginFL \DIFaddFL{bottom left), and muons (bottom }\DIFaddendFL right). These spectra are the response to an input beam of $10^5$ protons at \DIFdelbeginFL \DIFdelFL{$1.1$}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$11$}\DIFaddendFL ~GeV injected with isotropic downgoing incidence into an MSIS atmosphere at $450$~km.
   }
   \label{figure:example_histograms}
 \end{figure}
@@ -273,7 +364,9 @@ Since the calculation of dose rate is species- and energy-dependent, we need to 
 \label{section:gcrs}
 While the primary goal of this study is to constrain dose rates due to REP, we first attempt to explain the ARMAS-measured dose rates with GCRs alone. Since NAIRAS estimates of GCR dose rates do not explain the ARMAS dose rates, we seek to model upper-bound GCR dose rates using our own modeling. To perform this modeling, we utilize data from the Alpha Magnetic Spectrometer (AMS-02) on board the International Space Station (ISS) \cite{ams02}. AMS-02 measures GCR energy spectra at a daily cadence for a number of particle species. In this work, we consider the proton and alpha particle contribution to dose rate. AMS-02 measures GCR protons between $0.4$~GeV and $99$~GeV and alpha particles between $1.3$~GeV and $135.7$~GeV.
 
-To convert a spectrum measured by AMS-02 into a dose rate profile, we used the SEPIIDA model to inject a series of monoenergetic proton and alpha beams into a simulated atmosphere. Each beam had an energy corresponding to the mean energy of an AMS-02 energy channel. We injected these beams into our simulation with an initial velocity randomly selected from an isotropically downgoing distribution. Each beam consisted of $10^5$ particles. This number of particles was determined to produce results with sufficient precision in \citeA{berland2023}. As described in Section \ref{section:model:doserate_conversion}, energy spectra of primary particles and cascade products were recorded along the atmospheric column for each beam. These spectra provide a basis set of atmospheric responses to protons and alpha particles. The response tables were saved to a datafile for later lookup. Performing a sum of these lookup tables weighted by the flux measured by AMS-02 thus provides a composite atmospheric response for a given AMS-02 spectrum.
+To convert a spectrum measured by AMS-02 into a dose rate profile, we used the SEPIIDA model to inject a series of monoenergetic proton and alpha beams into a simulated atmosphere. Each beam had an energy corresponding to the mean energy of an AMS-02 energy channel. We injected these beams into our simulation with an initial velocity randomly selected from an isotropically downgoing distribution. Each beam consisted of $10^5$ particles. \DIFaddbegin \DIFadd{This number of particles was determined to produce results with sufficient precision in \mbox{%DIFAUXCMD
+\citeA{berland2023}}\hskip0pt%DIFAUXCMD
+. }\DIFaddend As described in Section \ref{section:model:doserate_conversion}, energy spectra of primary particles and cascade products were recorded along the atmospheric column for each beam. These spectra provide a basis set of atmospheric responses to protons and alpha particles. The response tables were saved to a datafile for later lookup. Performing a sum of these lookup tables weighted by the flux measured by AMS-02 thus provides a composite atmospheric response for a given AMS-02 spectrum.
 
 To calculate lookup table weights, we first integrate a given AMS-02 spectrum over solid angle. This solid angle integration is performed over a full $2\pi$ hemisphere, thus assuming an isotropic distribution of incoming GCRs. In reality, the solid angle over which GCRs arrive at LEO is rigidity-dependent and smaller than $2\pi$ for particles with rigidities below approximately $10$~GV \cite{chen2025}. The isotropic hemisphere assumption likely overestimates the flux of lower-rigidity particles, thus increasing our GCR dose rate predictions. This assumption was made for ease of calculation and in pursuit of our goal of finding an upper-bound GCR dose rate.
 
@@ -281,33 +374,52 @@ After solid angle integration, we perform a trapezoidal integration over energy 
 
 \begin{figure}[H]
   \centering
-  \noindent\includegraphics[width=\textwidth]{figures/gcr_spectrum.pdf}
-  \caption{
+  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures_rev0/gcr_spectrum.pdf}
+%DIFDELCMD <   %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{figures/gcr_spectrum.pdf}
+  \DIFaddendFL \caption{
       Left: Example of a cosmic ray spectrum measured in low Earth orbit by AMS-02 for protons (solid pink line) and alpha particles (dashed blue line). Right: Dose rate in silicon as a function of altitude predicted by our model due to the AMS-02-measured spectrum.
   }
   \label{figure:gcr_spectrum}
 \end{figure}
 
-In Figure \ref{figure:case_studies}, we plot four example cases showing a) agreement between SEPIIDA, NAIRAS v1, and ARMAS; b) disagreement between NAIRAS v1 and ARMAS, but agreement between ARMAS and SEPIIDA; c) small excess dose rates in ARMAS above the SEPIIDA prediction; and d) large excess dose rates in ARMAS above the SEPIIDA prediction. Error bars on ARMAS data represent the $1\sigma$ uncertainty, which is $20\%$. When comparing an AMS-02-derived dose rate to ARMAS-measured dose rates, we only required that the AMS-02 spectra and ARMAS dose rates were recorded on the same day. AMS-02 provides spectra at a daily cadence, thus no stricter conjunction requirements could be used.
+In Figure \ref{figure:case_studies}, we plot four example \DIFdelbegin \DIFdel{conjunctions }\DIFdelend \DIFaddbegin \DIFadd{cases }\DIFaddend showing a) agreement between SEPIIDA, NAIRAS \DIFaddbegin \DIFadd{v1}\DIFaddend , and ARMAS; b) disagreement between NAIRAS \DIFaddbegin \DIFadd{v1 }\DIFaddend and ARMAS, but agreement between ARMAS and SEPIIDA; c) small excess dose rates in ARMAS above the SEPIIDA prediction; and d) large excess dose rates in ARMAS above the SEPIIDA prediction. Error bars on ARMAS data represent the $1\sigma$ uncertainty, which is $20\%$. \DIFdelbegin \DIFdel{SEPIIDA predictions of dose rate are derived from }\DIFdelend \DIFaddbegin \DIFadd{When comparing an AMS-02-derived dose rate to ARMAS-measured dose rates, we only required that the }\DIFaddend AMS-02 \DIFdelbegin \DIFdel{data }\DIFdelend \DIFaddbegin \DIFadd{spectra and ARMAS dose rates were }\DIFaddend recorded on the \DIFdelbegin \DIFdel{date of each panel. Note that }\DIFdelend \DIFaddbegin \DIFadd{same day. }\DIFaddend AMS-02 \DIFaddbegin \DIFadd{provides spectra at a daily cadence, thus no stricter conjunction requirements could be used.
+}
 
 \begin{figure}[H]
   \centering
   \noindent\includegraphics[width=\textwidth]{figures/case_studies.pdf}
   \caption{
-      Four example conjunction dates between ARMAS and AMS-02 showing the ARMAS-measured dose rate (black dots), NAIRAS v1-predicted GCR dose rate (blue crosses), and our predicted GCR dose rate based on AMS-02 data (pink line).
-  }
+      \DIFaddFL{Four example conjunction dates between ARMAS and AMS-02 showing the ARMAS-measured dose rate (black dots), NAIRAS v1-predicted GCR dose rate (blue crosses), and our predicted GCR dose rate based on AMS-02 data (pink line).
+  }}
   \label{figure:case_studies}
 \end{figure}
 
-Since AMS-02 data is provided at a daily cadence for the ISS's orbit at $51\mathdeg$ inclination, AMS-02 spectra spans a larger range of latitudes than ARMAS data, which is primarily limited to the mid-latitudes of the continental United States. Thus, the AMS-02 data experiences a wider range of cutoff rigidities than ARMAS and may record higher fluxes at low rigidities than ARMAS would experience, causing another potential overestimation of GCR dose rates. Once again, we accept this overestimation in order to determine if the excess dose rates can be explained by an upper-bound case for GCR dose rates.
+\DIFadd{Since AMS-02 }\DIFaddend data is provided at a daily cadence for the ISS's orbit at $51\mathdeg$ inclination, \DIFdelbegin \DIFdel{spanning a }\DIFdelend \DIFaddbegin \DIFadd{AMS-02 spectra spans a larger }\DIFaddend range of latitudes \DIFdelbegin \DIFdel{, while the ARMAS data}\DIFdelend \DIFaddbegin \DIFadd{than ARMAS data, which }\DIFaddend is primarily limited to the mid-latitudes of the continental United States. Thus, the AMS-02 data experiences a wider range of cutoff rigidities than ARMAS and may record higher fluxes at low rigidities than ARMAS would experience, causing another potential overestimation of GCR dose rates. Once again, we accept this overestimation in order to determine if the excess dose rates can be explained by an upper-bound case for GCR dose rates.
 
-With the ability to compute a dose rate profile from an AMS-02 spectrum, we next compare our predicted GCR dose rates to ARMAS-measured dose rates for every day where AMS-02 and ARMAS both recorded data. For each day, we subtract our predicted GCR-induced dose rate from the ARMAS-measured dose rate to produce a residual dose rate. The GCR-induced dose rate was taken at the same altitude of each ARMAS data record. The results of this comparison are shown in Figure \ref{figure:armas_residuals}, along with the results of the same procedure using NAIRAS version 1 predictions of GCR dose rate for reference.
+\DIFdelbegin %DIFDELCMD < \begin{figure}[H]
+%DIFDELCMD <   \centering
+%DIFDELCMD <   \noindent\includegraphics[width=\textwidth]{figures_rev0/case_studies.pdf}
+%DIFDELCMD <   %%%
+%DIFDELCMD < \caption{%
+{%DIFAUXCMD
+\DIFdelFL{Four example conjunction dates between ARMAS and AMS-02 showing the ARMAS-measured dose rate (black dots), NAIRAS-predicted GCR dose rate (blue crosses), and our predicted GCR dose rate based on AMS-02 data (pink line).
+  }}
+  %DIFAUXCMD
+%DIFDELCMD < \label{figure:case_studies}
+%DIFDELCMD < \end{figure}
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend With the ability to compute a dose rate profile from an AMS-02 spectrum, we next compare our predicted GCR dose rates to ARMAS-measured dose rates for every day where AMS-02 and ARMAS both recorded data. For each day, we subtract our predicted GCR-induced dose rate from the ARMAS-measured dose rate to produce a residual dose rate. The GCR-induced dose rate was taken at the same altitude of each ARMAS data record. The results of this comparison are shown in Figure \ref{figure:armas_residuals}, along with the results of the same procedure using NAIRAS version \DIFdelbegin \DIFdel{3 }\DIFdelend \DIFaddbegin \DIFadd{1 }\DIFaddend predictions of GCR dose rate for reference.
 
 \begin{figure}[H]
   \centering
-  \noindent\includegraphics[width=\textwidth]{figures/armas_residuals.pdf}
-  \caption{
-      Left: Residuals between our GCR dose rate predictions and ARMAS data for all conjunction dates with AMS-02. Right: Residuals between NAIRAS v1 predictions and ARMAS data for the same set of dates.
+  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures_rev0/armas_residuals.pdf}
+%DIFDELCMD <   %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{figures/armas_residuals.pdf}
+  \DIFaddendFL \caption{
+      Left: Residuals between our GCR dose rate predictions and ARMAS data for all conjunction dates with AMS-02. Right: Residuals between NAIRAS \DIFaddbeginFL \DIFaddFL{v1 }\DIFaddendFL predictions and ARMAS data for the same set of dates.
   }
   \label{figure:armas_residuals}
 \end{figure}
@@ -322,8 +434,10 @@ To calculate the possible contribution of electron precipitation to dose rates a
 
 \begin{figure}[H]
   \centering
-  \noindent\includegraphics[width=0.6\textwidth]{figures/elfin_example_data.pdf}
-  \caption{
+  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=0.6\textwidth]{figures_rev0/elfin_example_data.pdf}
+%DIFDELCMD <   %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=0.6\textwidth]{figures/elfin_example_data.pdf}
+  \DIFaddendFL \caption{
     Example of one timestep ($1.4$~seconds) of ELFIN data. Data was recorded in the northern hemisphere with a loss cone angle of approximately $68\mathdeg$. 
   }
   \label{figure:elfin_example_data}
@@ -333,15 +447,17 @@ We aim to find precipitating electron spectra recorded by ELFIN that are most li
 
 \begin{table}[H]
   \centering
-  \begin{tabular}{cccccc}
-    Percentile & Date (YYYY-MM-DD) & Time (UTC)   & Satellite & L-Shell & MLT (hh:mm) \\
+  \DIFdelbeginFL %DIFDELCMD < \begin{tabular}{cccc}
+%DIFDELCMD <     %%%
+\DIFdelendFL \DIFaddbeginFL \begin{tabular}{cccccc}
+    \DIFaddendFL Percentile & Date (YYYY-MM-DD) & Time (UTC)   & Satellite \DIFaddbeginFL & \DIFaddFL{L-Shell }& \DIFaddFL{MLT (hh:mm) }\DIFaddendFL \\
     \hline
-    $99.9$     & 2022-02-04        & 15:17:32.015 & ELFIN-B & 5.4 & 05:00 \\
-    $98$       & 2021-11-07        & 02:12:46.867 & ELFIN-B & 3.7 & 21:48 \\
-    $90$       & 2020-10-22        & 23:04:22.315 & ELFIN-A & 14.5 & 20:39
-  \end{tabular}
+    $99.9$     & 2022-02-04        & 15:17:32.015 & ELFIN-B \DIFaddbeginFL & \DIFaddFL{5.4 }& \DIFaddFL{05:00 }\DIFaddendFL \\
+    $98$       & 2021-11-07        & 02:12:46.867 & ELFIN-B \DIFaddbeginFL & \DIFaddFL{3.7 }& \DIFaddFL{21:48 }\DIFaddendFL \\
+    $90$       & 2020-10-22        & 23:04:22.315 & ELFIN-A \DIFaddbeginFL & \DIFaddFL{14.5 }& \DIFaddFL{20:39
+  }\DIFaddendFL \end{tabular}
   \caption{
-    Timestamps, satellite identification information, and geomagnetic coordinates for our selected ELFIN-measured spectra.
+    Timestamps\DIFdelbeginFL \DIFdelFL{and }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{, }\DIFaddendFL satellite identification information\DIFaddbeginFL \DIFaddFL{, and geomagnetic coordinates }\DIFaddendFL for our selected ELFIN-measured spectra.
   }
   \label{table:rep:spectra_summary}
 \end{table}
@@ -352,8 +468,10 @@ After injecting electron beams into SEPIIDA, the atmospheric response of each be
 
 \begin{figure}[H]
   \centering
-  \noindent\includegraphics[width=\textwidth]{figures/electron_spectrum.pdf}
-  \caption{
+  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures_rev0/electron_spectrum.pdf}
+%DIFDELCMD <   %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{figures/electron_spectrum.pdf}
+  \DIFaddendFL \caption{
       (a) Precipitating electron spectra derived from ELFIN-measured datapoints at the $99.9$th (solid magenta line), $98$th (dashed purple line), and $90$th (dash-dotted blue line) percentile of supra-MeV electron precipitation events recorded by ELFIN. (b) Dose rate in a silicon detector due to each of the spectra in (a) as a function of altitude.
   }
   \label{figure:rep:electron_spectrum}
@@ -363,25 +481,28 @@ We then compare our REP-induced dose rate to the excess dose rates we calculated
 
 \begin{figure}[H]
   \centering
-  \noindent\includegraphics[width=.85\textwidth]{figures/excess_dose_comparison.pdf}
-  \caption{
+  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=.85\textwidth]{figures_rev0/excess_dose_comparison.pdf}
+%DIFDELCMD <   %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=.85\textwidth]{figures/excess_dose_comparison.pdf}
+  \DIFaddendFL \caption{
     Distribution of excess dose rates as a function of altitude (color) with overlaid curves showing the modeled dose rate due to the $99.9$th (solid magenta line), $98$th (dashed purple line), and $90$th (dash-dotted blue line) percentile of supra-MeV electron precipitation events recorded by ELFIN.
   }
   \label{figure:rep:excess_dose_comparison}
 \end{figure}
 
-Figure \ref{figure:rep:excess_dose_comparison} shows that the strongest relativistic electron precipitation ELFIN measured is not sufficient to explain the vast majority of excess dose rates observed by ARMAS, even with our assumptions to maximize the GCR component of total dose rate. The $99.9$th percentile REP-induced dose rate can only explain $0.67\%$ of the total number of excess dose rates recorded, and only at very high altitudes above $13$~km. Meanwhile, the $98$th and $90$th percentile events cannot account for any of the excess dose rate measurements. Often, the REP-induced dose rates are multiple orders of magnitude smaller than the excess dose rates measured by ARMAS.
+Figure \ref{figure:rep:excess_dose_comparison} shows that the strongest relativistic electron precipitation ELFIN measured is not sufficient to explain the vast majority of excess dose rates observed by ARMAS, even with our assumptions to maximize the GCR component of total dose rate. The $99.9$th percentile REP-induced dose rate can only explain \DIFdelbegin \DIFdel{$0.5\%$ }\DIFdelend \DIFaddbegin \DIFadd{$0.67\%$ }\DIFaddend of the total number of excess dose rates recorded, and only at very high altitudes above $13$~km. Meanwhile, the $98$th and $90$th percentile events cannot account for any of the excess dose rate measurements. Often, the REP-induced dose rates are multiple orders of magnitude smaller than the excess dose rates measured by ARMAS.
 
 \section{Discussion}
 At each step in our analysis where there was uncertainty in the model inputs, we made the assumption in favor of giving REP the best chance possible to explain the excess dose rates. We assumed that GCRs were isotropically incoming over one hemisphere regardless of rigidity, overestimating the dose rate contribution of GCR particles with rigidities below $10$~GV. We also simulated incoming GCRs measured at lower cutoff rigidities than ARMAS experienced, allowing for potentially higher fluxes of low-rigidity particles than ARMAS would experience. Both of these assumptions increased our predicted GCR dose rates, thereby reducing the magnitude of the excess dose rates that needed to be explained by REP. Furthermore, when simulating REP, we assumed that precipitating electrons were exclusively field-aligned, maximizing their penetration depth into the atmosphere and thus their resultant dose rates. Finally, we chose to compare the excess dose rates to three cases of the most extreme REP events measured over the full lifetime of the ELFIN satellites.
 
 However, despite these assumptions and choices, we found that the event corresponding to the $99.9$th percentile of REP strength measured by ELFIN could only explain a small number of excess dose rates at high altitudes. The $98$th percentile and below could not fully explain a single excess dose rate at any altitude. Furthermore, the excess dose rates explainable by the $99.9$th percentile REP event only occurred above $13$~km. At $11$~km (a more typical aviation altitude), the dose rate due to the $99.9$th percentile REP event explained only $0.1\%$ to $3\%$ of excess dose rate magnitudes, and the $98$th and $90$th percentile events explained less than $0.01\%$ of even the smallest excess dose rate magnitude. Moreover, our modeling predicts that REP can contribute only up to approximately $0.01$~{\ugy}/hr at aviation altitudes in the most extreme cases. We thus conclude that REP cannot reasonably explain the excess dose rates measured at aviation altitudes by ARMAS.
 
-Previous modeling efforts also support this conclusion. As previously discussed, \citeA{xu2021} predicted that a flux of $10^8$~electrons$~\cdot~$m$^{-2}~\cdot~$s$^{-1}$ of $10$~MeV electrons, a flux orders of magnitude higher than typical observed electron fluxes at LEO, would induce a dose rate of just $0.05$~{\ugy}/hr at an altitude of $11$~km. Meanwhile, typical excess dose rates are on the order of $1$~{\ugy}/hr (Figure \ref{figure:rep:excess_dose_comparison}). Thus, their work predicts that an extreme flux of ultrarelativistic electrons could contribute only up to about $5\%$ of a typical excess dose rate. In the case studies presented by \citeA{mcmurchie2022}, the highest fraction of total (not excess) dose rate explained by REP was $3.66\%$. To explain the excess dose rates measured by ARMAS, REP-induced dose rates would have to make up about $10\%$ to $50\%$ of the total dose rate. These modeling results suggest that REP is unlikely to be able to generate dose rates on the order of the observed excess dose rates.
+Previous modeling efforts also support this conclusion. As previously discussed, \citeA{xu2021} predicted that a flux of $10^8$~electrons$~\cdot~$m$^{-2}~\cdot~$s$^{-1}$ of $10$~MeV electrons, a flux orders of magnitude higher than typical observed electron fluxes at LEO, would induce a dose rate of just $0.05$~{\ugy}/hr at an altitude of $11$~km. Meanwhile, typical excess dose rates are on the order of $1$~{\ugy}/hr (Figure \ref{figure:rep:excess_dose_comparison}). Thus, their work predicts that an extreme flux of ultrarelativistic electrons could contribute only up to about $5\%$ of a typical excess dose rate. In the case studies presented by \citeA{mcmurchie2022}, the highest fraction of total (not excess) dose rate explained by REP was $3.66\%$. To explain the excess dose rates measured by ARMAS, REP-induced dose rates would have to make up about $10\%$ to $50\%$ of the total dose rate. \DIFdelbegin \DIFdel{The results of both of these studies }\DIFdelend \DIFaddbegin \DIFadd{These modeling results }\DIFaddend suggest that REP is unlikely to be able to generate dose rates on the order of the observed excess dose rates.
 
-We recognize the compelling correlation between hiss wave activity and excess dose rates presented in \citeA{aryan2025b}. The goal of this study is not to explain that correlation, but simply to quantitatively constrain the hypothesis that REP is responsible for that correlation. Between our analysis and previous literature, we believe it is unlikely that relativistic electron precipitation is the direct cause of the discrepancies between GCR dose rate predictions and dose rates measured by the ARMAS system.
+We recognize the compelling correlation between hiss wave activity and excess dose rates presented in \citeA{aryan2025b}. The goal of this study is not to explain that correlation, but simply to quantitatively constrain the hypothesis that REP is responsible for that correlation. Between our analysis and previous literature, we believe it is unlikely that relativistic electron precipitation is the direct cause of the discrepancies between GCR dose rate predictions and dose rates measured by the ARMAS system\DIFaddbegin \DIFadd{.
+}
 
-It is also worth noting that there are other effects that may contribute to the discrepancy between ARMAS measurements and  predictions. Firstly, both NAIRAS and SEPIIDA predict GCR-induced dose rates with no shielding. In reality, the fuselage of an aircraft provides some shielding from incident particles and may also generate additional particle showers, potentially affecting the dose rates measured from inside an aircraft cabin. Furthermore, NAIRAS parameterizes altitude by barometric pressure, while the ARMAS dataset utilizes GPS data to calculate altitude. Altitudes computed with different methods may differ slightly, adding another potential source of discrepancy between the datasets. 
+\DIFadd{It is also worth noting that there are other effects that may contribute to the discrepancy between ARMAS measurements and  predictions. Firstly, both NAIRAS and SEPIIDA predict GCR-induced dose rates with no shielding. In reality, the fuselage of an aircraft provides some shielding from incident particles and may also generate additional particle showers, potentially affecting the dose rates measured from inside an aircraft cabin. Furthermore, NAIRAS parameterizes altitude by barometric pressure, while the ARMAS dataset utilizes GPS data to calculate altitude. Altitudes computed with different methods may differ slightly, adding another potential source of discrepancy between the datasets}\DIFaddend . 
 
 \section{Conclusion}
 In this work, we investigated the contribution of relativistic electron precipitation to radiation dose rates at aviation altitudes. We used the SEPIIDA model to forward model distributions of GCR ions and radiation belt electrons measured in-situ at the top of the atmosphere to calculate radiation dose rates through a column of atmosphere. We predicted that the dose rates due to REP cannot reasonably explain excess dose rates measured at aviation altitudes. Our results are in agreement with previous literature that used a different particle transport model. We therefore conclude that radiation belt electrons are unlikely to be the source of excess radiation doses at aviation altitudes, and moreover are unlikely to contribute any noticeable dose rate at those altitudes. Further investigation is required to determine the source of these excess dose rates and the reason for their correlation with magnetospheric hiss.

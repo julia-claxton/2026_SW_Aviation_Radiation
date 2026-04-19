@@ -50,17 +50,25 @@ def example_model_histograms():
     data = np.load(f"{TOP_LEVEL}/data/figure_data/example_histograms.npz")
 
     # Create figure
-    fig, ax = plt.subplots(1, 3, figsize = (11.2, 3.2)) # (14, 4)
+    fig, ax = plt.subplots(2, 2, figsize = (9, 7)) # (14, 4)
     fig.patch.set_facecolor("none") # Outside bg color
 
     # Draw data
-    species = ["proton", "electron", "gamma"]
-    for i in range(3):
-        img = _model_histogram(fig, ax[i], data, species[i])
+    species = ["proton", "electron", "gamma", "muon"]
+    species_iterator = 0
+    for i in range(2):
+        for j in range(2):
+            img = _model_histogram(fig, ax[i,j], data, species[species_iterator])
+            if i == 0:
+                ax[i,j].set_xlabel("")
+            if j == 1:
+                ax[i,j].set_ylabel("")
+
+            species_iterator = species_iterator + 1
 
     # Draw main colorbar
     fig.subplots_adjust(right = 0.8)
-    cbar_ax = fig.add_axes([0.82, 0.15, 0.015, 0.7])
+    cbar_ax = fig.add_axes([0.82, 0.1, 0.015, 0.79])
     fig.colorbar(img,
         label = "Counts, # per # input protons",
         cax = cbar_ax,
@@ -85,7 +93,8 @@ def _model_histogram(fig, ax, data, species):
 
     ax.set_xlabel("Energy, keV")
     ax.set_xscale("log")
-    ax.set_xticks(np.logspace(-2, 7, 10))
+    ax.set_xlim(10.0**-2, 10.0**7.5)
+    ax.set_xticks(10.0**np.arange(-2, 7.1, 1))
 
     for label in ax.xaxis.get_ticklabels()[::2]:
         label.set_visible(False)
@@ -93,8 +102,7 @@ def _model_histogram(fig, ax, data, species):
     ax.xaxis.set_minor_locator(matplotlib.ticker.LogLocator(base=10, subs=np.arange(1, 10)))
     ax.xaxis.set_minor_formatter(matplotlib.ticker.NullFormatter())
 
-    if species in ["proton"]:
-        ax.set_ylabel("Altitude, km")
+    ax.set_ylabel("Altitude, km")
     ax.set_ylim(0, 100)
     ax.set_yticks(np.arange(0, 100.1, 10))
 
@@ -103,6 +111,7 @@ def _model_histogram(fig, ax, data, species):
     ax.set_axisbelow(True)
     ax.set_box_aspect(1)
     ax.grid(alpha = 0.25)
+
 
     return img
 
@@ -125,6 +134,12 @@ def stopping_power():
         color = "#005EEB",
         linestyle = "dotted"
     )
+    ax[0].plot(data["muon_energy_kev"], data["muon_stopping_power"],
+        label = "Muon",
+        color = "#1dd1db",
+        linestyle = "dashdot"
+    )
+
     ax[1].plot(data["photon_energy_kev"], data["photon_mu_en"],
         label = "NIST Tables",
         color = "#f41e97"
@@ -135,16 +150,13 @@ def stopping_power():
         linestyle = "dashed"
     )
 
-
     # X-axis
+    ax[0].set_xlim(10.0**-0.3, 10.0**9)    
     ax[1].set_xlim(10.0**0, 10.0**7)
 
     # Y-axis
     ax[0].set_ylabel("Stopping Power, keV m² kg⁻¹")
     ax[1].set_ylabel("μₑₙ, m² kg⁻¹")
-
-    #ax.set_ylim(0, 100)
-    #ax.set_yticks(range(0, 101, 10))
 
     # Misc/box
     for i, _ in enumerate(ax):
@@ -166,6 +178,8 @@ def stopping_power():
             alpha = 0.1
         ) 
         ax[i].set_axisbelow(True)
+
+    ax[0].set_xticks(10.0**np.arange(0, 9.1, 1))
 
     my_savefig(fig, "stopping_power")
 

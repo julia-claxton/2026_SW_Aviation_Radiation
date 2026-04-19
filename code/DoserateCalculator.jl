@@ -43,7 +43,13 @@ end
 
 function flux_to_doserate(flux_data; results_dir = "$(TOP_LEVEL)/data/GLYPHS", extrapolate_μ_en = true)
     # Get dummy data for result allocation
-    beam_particles, beam_energies_keV = get_beams(results_dir)
+
+    # Switch dummy data allocation based on whether we are doing REP or GCRs since energy spectrum bin size is different between the two
+    if size(flux_data["electron_flux"])[2] ≠ 300 # This is not an electron input
+        beam_particles, beam_energies_keV = get_beams(results_dir, input_particle = "proton")
+    else
+        beam_particles, beam_energies_keV = get_beams(results_dir, input_particle = "electron")
+    end
     dummy_data = get_spectra(results_dir, beam_particles[begin], beam_energies_keV[begin])
 
     # Loop over species and sum up doserate
@@ -77,7 +83,13 @@ end
 
 function beam_weights_to_flux(beam_particles, beam_energies_keV, beam_fluxes; results_dir = "$(TOP_LEVEL)/data/GLYPHS")
     # Get dummy data for result allocation
-    dummy_particles, dummy_energies = get_beams(results_dir)
+
+    # Switch dummy data allocation based on whether we are doing REP or GCRs since energy spectrum bin size is different between the two
+    if length(beam_particles) ≠ 16
+        dummy_particles, dummy_energies = get_beams(results_dir, input_particle = "proton")
+    else
+        dummy_particles, dummy_energies = get_beams(results_dir, input_particle = "electron")
+    end
     dummy_data = get_spectra(results_dir, dummy_particles[begin], dummy_energies[begin])
 
     # Allocate results
