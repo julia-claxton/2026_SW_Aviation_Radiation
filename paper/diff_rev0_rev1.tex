@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %DIF LATEXDIFF DIFFERENCE FILE
-%DIF DEL claxton2026_aviation_revision_0.tex   Sun Apr 19 09:56:02 2026
-%DIF ADD claxton2026_aviation_revision_1.tex   Sun Apr 19 11:58:39 2026
+%DIF DEL claxton2026_aviation_revision_0.tex   Sun Apr 19 12:28:20 2026
+%DIF ADD claxton2026_aviation_revision_1.tex   Sun Apr 19 12:28:37 2026
 % AGUJournalTemplate.tex: this template file is for articles formatted with LaTeX
 %
 % This file includes commands and instructions
@@ -338,9 +338,9 @@ Stopping power tables were sourced from NIST for protons ($1$~keV to $10$~GeV), 
 
 \begin{figure}[H]
   \centering
-  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures_rev0/stopping_power.pdf}
+  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures/rev0/stopping_power.pdf}
 %DIFDELCMD <   %%%
-\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{figures/stopping_power.pdf}
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{figures/rev1/stopping_power.pdf}
   \DIFaddendFL \caption{
     Stopping power (left) and X-ray mass energy-absorption coefficient (right) as a function of energy used in this work.
   }
@@ -351,9 +351,9 @@ Since the calculation of dose rate is species- and energy-dependent, we need to 
 
 \begin{figure}[H]
   \centering
-  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures_rev0/example_histograms.pdf}
+  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures/rev0/example_histograms.pdf}
 %DIFDELCMD <   %%%
-\DIFdelendFL \DIFaddbeginFL \includegraphics[width=0.8\textwidth]{figures/example_histograms.pdf}
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=0.8\textwidth]{figures/rev1/example_histograms.pdf}
   \DIFaddendFL \caption{
     Example simulated energy spectra as a function of altitude for protons (\DIFaddbeginFL \DIFaddFL{top }\DIFaddendFL left), electrons (\DIFdelbeginFL \DIFdelFL{center}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{top right}\DIFaddendFL ), \DIFdelbeginFL \DIFdelFL{and }\DIFdelendFL photons (\DIFaddbeginFL \DIFaddFL{bottom left), and muons (bottom }\DIFaddendFL right). These spectra are the response to an input beam of $10^5$ protons at \DIFdelbeginFL \DIFdelFL{$1.1$}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$11$}\DIFaddendFL ~GeV injected with isotropic downgoing incidence into an MSIS atmosphere at $450$~km.
   }
@@ -374,9 +374,9 @@ After solid angle integration, we perform a trapezoidal integration over energy 
 
 \begin{figure}[H]
   \centering
-  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures_rev0/gcr_spectrum.pdf}
+  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures/rev0/gcr_spectrum.pdf}
 %DIFDELCMD <   %%%
-\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{figures/gcr_spectrum.pdf}
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{figures/rev1/gcr_spectrum.pdf}
   \DIFaddendFL \caption{
       Left: Example of a cosmic ray spectrum measured in low Earth orbit by AMS-02 for protons (solid pink line) and alpha particles (dashed blue line). Right: Dose rate in silicon as a function of altitude predicted by our model due to the AMS-02-measured spectrum.
   }
@@ -388,7 +388,7 @@ In Figure \ref{figure:case_studies}, we plot four example \DIFdelbegin \DIFdel{c
 
 \begin{figure}[H]
   \centering
-  \noindent\includegraphics[width=\textwidth]{figures/case_studies.pdf}
+  \noindent\includegraphics[width=\textwidth]{figures/rev1/case_studies.pdf}
   \caption{
       \DIFaddFL{Four example conjunction dates between ARMAS and AMS-02 showing the ARMAS-measured dose rate (black dots), NAIRAS v1-predicted GCR dose rate (blue crosses), and our predicted GCR dose rate based on AMS-02 data (pink line).
   }}
@@ -399,7 +399,7 @@ In Figure \ref{figure:case_studies}, we plot four example \DIFdelbegin \DIFdel{c
 
 \DIFdelbegin %DIFDELCMD < \begin{figure}[H]
 %DIFDELCMD <   \centering
-%DIFDELCMD <   \noindent\includegraphics[width=\textwidth]{figures_rev0/case_studies.pdf}
+%DIFDELCMD <   \noindent\includegraphics[width=\textwidth]{figures/rev0/case_studies.pdf}
 %DIFDELCMD <   %%%
 %DIFDELCMD < \caption{%
 {%DIFAUXCMD
@@ -415,9 +415,9 @@ In Figure \ref{figure:case_studies}, we plot four example \DIFdelbegin \DIFdel{c
 
 \begin{figure}[H]
   \centering
-  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures_rev0/armas_residuals.pdf}
+  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures/rev0/armas_residuals.pdf}
 %DIFDELCMD <   %%%
-\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{figures/armas_residuals.pdf}
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{figures/rev1/armas_residuals.pdf}
   \DIFaddendFL \caption{
       Left: Residuals between our GCR dose rate predictions and ARMAS data for all conjunction dates with AMS-02. Right: Residuals between NAIRAS \DIFaddbeginFL \DIFaddFL{v1 }\DIFaddendFL predictions and ARMAS data for the same set of dates.
   }
@@ -434,9 +434,9 @@ To calculate the possible contribution of electron precipitation to dose rates a
 
 \begin{figure}[H]
   \centering
-  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=0.6\textwidth]{figures_rev0/elfin_example_data.pdf}
+  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=0.6\textwidth]{figures/rev0/elfin_example_data.pdf}
 %DIFDELCMD <   %%%
-\DIFdelendFL \DIFaddbeginFL \includegraphics[width=0.6\textwidth]{figures/elfin_example_data.pdf}
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=0.6\textwidth]{figures/rev1/elfin_example_data.pdf}
   \DIFaddendFL \caption{
     Example of one timestep ($1.4$~seconds) of ELFIN data. Data was recorded in the northern hemisphere with a loss cone angle of approximately $68\mathdeg$. 
   }
@@ -468,9 +468,9 @@ After injecting electron beams into SEPIIDA, the atmospheric response of each be
 
 \begin{figure}[H]
   \centering
-  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures_rev0/electron_spectrum.pdf}
+  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{figures/rev0/electron_spectrum.pdf}
 %DIFDELCMD <   %%%
-\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{figures/electron_spectrum.pdf}
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{figures/rev1/electron_spectrum.pdf}
   \DIFaddendFL \caption{
       (a) Precipitating electron spectra derived from ELFIN-measured datapoints at the $99.9$th (solid magenta line), $98$th (dashed purple line), and $90$th (dash-dotted blue line) percentile of supra-MeV electron precipitation events recorded by ELFIN. (b) Dose rate in a silicon detector due to each of the spectra in (a) as a function of altitude.
   }
@@ -481,9 +481,9 @@ We then compare our REP-induced dose rate to the excess dose rates we calculated
 
 \begin{figure}[H]
   \centering
-  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=.85\textwidth]{figures_rev0/excess_dose_comparison.pdf}
+  \noindent\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=.85\textwidth]{figures/rev0/excess_dose_comparison.pdf}
 %DIFDELCMD <   %%%
-\DIFdelendFL \DIFaddbeginFL \includegraphics[width=.85\textwidth]{figures/excess_dose_comparison.pdf}
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=.85\textwidth]{figures/rev1/excess_dose_comparison.pdf}
   \DIFaddendFL \caption{
     Distribution of excess dose rates as a function of altitude (color) with overlaid curves showing the modeled dose rate due to the $99.9$th (solid magenta line), $98$th (dashed purple line), and $90$th (dash-dotted blue line) percentile of supra-MeV electron precipitation events recorded by ELFIN.
   }
@@ -499,21 +499,25 @@ However, despite these assumptions and choices, we found that the event correspo
 
 Previous modeling efforts also support this conclusion. As previously discussed, \citeA{xu2021} predicted that a flux of $10^8$~electrons$~\cdot~$m$^{-2}~\cdot~$s$^{-1}$ of $10$~MeV electrons, a flux orders of magnitude higher than typical observed electron fluxes at LEO, would induce a dose rate of just $0.05$~{\ugy}/hr at an altitude of $11$~km. Meanwhile, typical excess dose rates are on the order of $1$~{\ugy}/hr (Figure \ref{figure:rep:excess_dose_comparison}). Thus, their work predicts that an extreme flux of ultrarelativistic electrons could contribute only up to about $5\%$ of a typical excess dose rate. In the case studies presented by \citeA{mcmurchie2022}, the highest fraction of total (not excess) dose rate explained by REP was $3.66\%$. To explain the excess dose rates measured by ARMAS, REP-induced dose rates would have to make up about $10\%$ to $50\%$ of the total dose rate. \DIFdelbegin \DIFdel{The results of both of these studies }\DIFdelend \DIFaddbegin \DIFadd{These modeling results }\DIFaddend suggest that REP is unlikely to be able to generate dose rates on the order of the observed excess dose rates.
 
-We recognize the compelling correlation between hiss wave activity and excess dose rates presented in \citeA{aryan2025b}. The goal of this study is not to explain that correlation, but simply to quantitatively constrain the hypothesis that REP is responsible for that correlation. Between our analysis and previous literature, we believe it is unlikely that relativistic electron precipitation is the direct cause of the discrepancies between GCR dose rate predictions and dose rates measured by the ARMAS system\DIFaddbegin \DIFadd{.
+We recognize the compelling correlation between hiss wave activity and excess dose rates presented in \citeA{aryan2025b}. The goal of this study is not to explain that correlation, but simply to quantitatively constrain the hypothesis that REP is responsible for that correlation. Between our analysis and previous literature, we believe it is unlikely that relativistic electron precipitation is the direct cause of the discrepancies between GCR dose rate predictions and dose rates measured by the ARMAS system.
+
+\DIFaddbegin \DIFadd{It is also worth noting that there are other effects that may contribute to the discrepancy between ARMAS measurements and  predictions. Firstly, both NAIRAS and SEPIIDA predict GCR-induced dose rates with no shielding. In reality, the fuselage of an aircraft provides some shielding from incident particles and may also generate additional particle showers, potentially affecting the dose rates measured from inside an aircraft cabin. Furthermore, NAIRAS parameterizes altitude by barometric pressure, while the ARMAS dataset utilizes GPS data to calculate altitude. Altitudes computed with different methods may differ slightly, adding another potential source of discrepancy between the datasets. 
 }
 
-\DIFadd{It is also worth noting that there are other effects that may contribute to the discrepancy between ARMAS measurements and  predictions. Firstly, both NAIRAS and SEPIIDA predict GCR-induced dose rates with no shielding. In reality, the fuselage of an aircraft provides some shielding from incident particles and may also generate additional particle showers, potentially affecting the dose rates measured from inside an aircraft cabin. Furthermore, NAIRAS parameterizes altitude by barometric pressure, while the ARMAS dataset utilizes GPS data to calculate altitude. Altitudes computed with different methods may differ slightly, adding another potential source of discrepancy between the datasets}\DIFaddend . 
-
-\section{Conclusion}
+\DIFaddend \section{Conclusion}
 In this work, we investigated the contribution of relativistic electron precipitation to radiation dose rates at aviation altitudes. We used the SEPIIDA model to forward model distributions of GCR ions and radiation belt electrons measured in-situ at the top of the atmosphere to calculate radiation dose rates through a column of atmosphere. We predicted that the dose rates due to REP cannot reasonably explain excess dose rates measured at aviation altitudes. Our results are in agreement with previous literature that used a different particle transport model. We therefore conclude that radiation belt electrons are unlikely to be the source of excess radiation doses at aviation altitudes, and moreover are unlikely to contribute any noticeable dose rate at those altitudes. Further investigation is required to determine the source of these excess dose rates and the reason for their correlation with magnetospheric hiss.
 
 \section*{Open Research Section}
 % This section MUST contain a statement that describes where the data supporting the conclusions can be obtained. Data cannot be listed as ''Available from authors'' or stored solely in supporting information. Citations to archived data should be included in your reference list. Wiley will publish it as a separate section on the paper’s page. Examples and complete information are here: https://www.agu.org/Publish with AGU/Publish/Author Resources/Data for Authors
-ELFIN data \cite{angelopoulos2020} is available for free at \url{https://data.elfin.ucla.edu/ela/}. Geant4 \cite{geant4} is available for free from \url{https://geant4.web.cern.ch/download/11.3.2.html}. The SEPIIDA code used to generate lookup tables is available for free at \url{https://doi.org/10.5281/zenodo.18473010}. The atmospheric response lookup tables generated by the Geant4 simulation are available for free at \url{https://doi.org/10.5281/zenodo.18473107}. All code used to perform the analysis and generate figures for this paper is available for free at \url{https://doi.org/10.5281/zenodo.18473200} . Analysis was performed using the Julia coding language \cite{julia-language}, NumPy \cite{numpy}, SpacePy \cite{spacepy1, spacepy2}, and Matplotlib \cite{matplotlib}.
+ELFIN data \cite{angelopoulos2020} is available for free at \url{https://data.elfin.ucla.edu/ela/}. Geant4 \cite{geant4} is available for free from \url{https://geant4.web.cern.ch/download/11.3.2.html}. The SEPIIDA code used to generate lookup tables is available for free at \url{https://doi.org/10.5281/zenodo.18473010}. The atmospheric response lookup tables generated by the Geant4 simulation are available for free at \DIFdelbegin %DIFDELCMD < \url{https://doi.org/10.5281/zenodo.18473107}%%%
+\DIFdelend \DIFaddbegin \url{https://doi.org/10.5281/zenodo.19654447}\DIFaddend . All code used to perform the analysis and generate figures for this paper is available for free at \url{https://doi.org/10.5281/zenodo.18473200} . Analysis was performed using the Julia coding language \cite{julia-language}, NumPy \cite{numpy}, SpacePy \cite{spacepy1, spacepy2}, and Matplotlib \cite{matplotlib}.
+\DIFdelbegin %DIFDELCMD < 
 
-%\cite{code-citation-aviationg4}
-%\cite{data-citation-tables}
-%\cite{code-citation-mainrepo}
+%DIFDELCMD < %%%
+%DIF < \cite{code-citation-aviationg4}
+%DIF < \cite{data-citation-tables}
+%DIF < \cite{code-citation-mainrepo}
+\DIFdelend 
 
 \section*{Conflict of Interest Declaration}
 The authors declare there are no conflicts of interest for this manuscript.

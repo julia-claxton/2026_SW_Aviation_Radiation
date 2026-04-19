@@ -28,3 +28,6 @@ Thumbs.db
 *.fls
 *.gz
 *.log
+*(busy)*
+*.bbl
+*.blg
