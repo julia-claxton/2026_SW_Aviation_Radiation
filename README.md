@@ -5,7 +5,9 @@ This repository contains the code and data necessary to replicate the analysis, 
 
 **The full text of the paper is available in the top level of this repository at [`/FullText.pdf`](/FullText.pdf).**
 
-The TeX source for the paper may be found in [`/paper`](/paper) in this repository. Full source code for analysis and figure generation is in [`/code`](/code). Figures in `.pdf`, `.png`, and `.svg` formats are located in [`/paper/figures`](/paper/figures).
+The TeX source for the paper, including the original submitted version (called "rev0" in filenames) and revisions after peer review (called "rev1", "rev2", etc. in filenames) may be found in [`/paper`](/paper) in this repository. Original figure files in `.pdf`, `.png`, and `.svg` formats are located in [`/paper/figures`](/paper/figures).
+
+Full source code for analysis and figure generation is in [`/code`](/code).
 
 **All data used to produce figures are stored in numpy archives (`.npz`) in [`/data/figure_data`](/data/figure_data).**
 
